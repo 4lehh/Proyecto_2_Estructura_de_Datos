@@ -6,3 +6,4 @@
 vgcore*
 */build/*.o
 build/*.o
+*.txt
