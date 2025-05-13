@@ -21,7 +21,7 @@ void MergeSort::sort(std::vector<std::vector<int>> &vector){
         
         avg_time += duration.count(), cantidad_elementos++;
     }
-    std::cout << "Tiempo promedio: " << avg_time / cantidad_elementos << "\n";
+    std::cout << "Tiempo de ejecucion promedio: " << avg_time / cantidad_elementos << "\n";
 }
 
 void MergeSort::mergesort(std::vector<int> &vector, int inicio, int fin){

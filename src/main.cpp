@@ -1,4 +1,6 @@
 #include "../include/mergeSort.hpp"
+#include "../include/insertionSort.hpp"
+#include "insertionSort.cpp"
 #include "mergeSort.cpp"
 #include <iostream>
 #include <fstream>
@@ -39,4 +41,7 @@ int main(){
 
     MergeSort m;
     m.sort(vector);
+    InsertionSort i;
+    pasarArreglos(vector);
+    i.sort(vector);
 }
