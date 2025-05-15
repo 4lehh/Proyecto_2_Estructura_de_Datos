@@ -1,11 +1,33 @@
-#pragma once
-#include <vector>
+//#pragma once
+/**
+ * @file heapSort.hpp
+ * @brief Implementación del algoritmo HeapSort.
+ * 
+ * Este archivo contiene la implementación del algoritmo HeapSort, que es un algoritmo de ordenamiento basado en la estructura de datos heap (montículo).
+ * 
+ * @note El algoritmo tiene una complejidad temporal de O(n log n) en el peor caso.
+ * @note La implementación utiliza un vector de enteros como entrada.
+ */
 
-class HeapSort{
-    private:
-        static void downheap(std::vector<int>&,int,int);
-        static void upheap(std::vector<int>&,int);
+
+#include "definiciones.hpp"
+
+class HeapSort {
     public: 
-        static void heapsort(std::vector<std::vector<int>>&);
-        static void print(std::vector<std::vector<int>>&);
+        /**
+         * @brief Función para ordenar un vector utilizando el algoritmo HeapSort.
+         * 
+         * @param v El vector a ordenar.
+         */
+        static void sort(vc &v);
+
+    private:
+        /**
+         * @brief Función para convertir un subárbol en un heap.
+         * 
+         * @param v El vector a ordenar.
+         * @param n El tamaño del heap. (Cuando se extraen elementos, el tamaño se reduce)
+         * @param i El índice del subárbol.
+         */
+        static void heapify(vc &v, int n, int i);
 };

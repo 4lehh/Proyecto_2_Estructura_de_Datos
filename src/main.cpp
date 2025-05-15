@@ -1,25 +1,15 @@
-#include "../include/mergeSort.hpp"
-#include "../include/insertionSort.hpp"
-#include "insertionSort.cpp"
-#include "mergeSort.cpp"
+#include "../include/definiciones.hpp"
+#include "../include/sorts.hpp"
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
 #include <string>
 
-void functionOptimization(){
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(0);
-}
-
 void pasarArreglos(std::vector<std::vector<int>> &vector){
     std::ifstream archivo("arreglos.txt");
 
-    if(!archivo){
-        std::cout << "Error al abrir el archivo";
-        return;
-    }
+    if(!archivo) throw std::runtime_error("No se pudo abrir el archivo");
 
     std::string linea;
     while(std::getline(archivo, linea)){
@@ -33,15 +23,38 @@ void pasarArreglos(std::vector<std::vector<int>> &vector){
 }
 
 int main(){
-    functionOptimization();
+    FunctionOptimization();
 
     std::vector<std::vector<int>> vector;
-    int tamaño = static_cast<int>(vector.size());
-    pasarArreglos(vector);
 
-    MergeSort m;
-    m.sort(vector);
-    InsertionSort i;
+    try {
+        pasarArreglos(vector);
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        return 1;
+    }
+
+    MergeSort::sort(vector);
+
+    try {
+        pasarArreglos(vector);
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        return 1;
+    }
+    
+    InsertionSort::sort(vector);
+
+    /*
+    Falta adaptar el main para que pase los vectores uno por uno a cada algoritmo,
+    los que hay que modificar son los que estan sin comentar.
+
     pasarArreglos(vector);
-    i.sort(vector);
+    HeapSort::sort(vector);
+
+    pasarArreglos(vector);
+    QuickSort::sort(vector);
+    */
+
+    return 0;
 }
