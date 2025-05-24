@@ -37,7 +37,7 @@ typedef std::pair<int, int> par;
  * @note En caso de estar testando el código, se recomienda comentar esta función.
  * @warning Esta función puede causar problemas si se mezcla con otras funciones de entrada/salida que dependen de la sincronización.
  */
-void FunctionOptimization() {
+inline void FunctionOptimization() {
    std::ios_base::sync_with_stdio(false);
    std::cin.tie(0);
 }

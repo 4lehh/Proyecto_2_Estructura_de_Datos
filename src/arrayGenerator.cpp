@@ -6,7 +6,7 @@
 
 void randomGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_numeros){
     
-    std::ofstream archivo("arreglos.txt", std::ios::out | std::ios::trunc);
+    std::ofstream archivo("arreglos.bin", std::ios::out | std::ios::trunc | std::ios::binary);
 
     if(!archivo){
         std::cout << "Error al abrir el archivo\n";
@@ -15,11 +15,11 @@ void randomGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_
     
     std::srand(std::time(0));
 
-    for(int i = 0; i < numero_de_arreglos; i++){
-        for(int j = 0 ; j < largo_de_arreglos; j++){
-            archivo << rand() % dominio_numeros << " ";
+    for (int i = 0; i < numero_de_arreglos; i++) {
+        for (int j = 0; j < largo_de_arreglos; j++) {
+            int numero = rand() % dominio_numeros;
+            archivo.write(reinterpret_cast<char*>(&numero), sizeof(int));
         }
-        archivo << "\n";
     }
 
     archivo.close();

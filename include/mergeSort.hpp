@@ -2,15 +2,39 @@
 #include <vector>
 
 /**
- * @class MergeSort
- * @brief Representa la clase con el metodo de ordenamiento MergeSort
+ * @file mergeSort.hpp
+ * @brief Implementación del algoritmo MergeSort.
+ * 
+ * Este archivo contiene la implementación del algoritmo MergeSort, que es un algoritmo recursivo.
+ * 
+ * @note El algoritmo tiene una complejidad temporal de O(n²) en el peor caso.
+ * @note La implementación utiliza un vector de enteros como entrada.
  */
+
 class MergeSort{
     public:
-        static void sort(std::vector<std::vector<int>>&);
-        static void print(std::vector<std::vector<int>>&);
-
+        /**
+         * @brief Función para ordenar un vector utilizando el algoritmo Merge Sort.
+         * 
+         * @param vector El vector a ordenar.
+         */
+        static void sort(std::vector<int>&);
     private:
-        static void mergesort(std::vector<int>&,int,int);
+        /**
+         * @brief Función para ordenar un vector utilizando el algoritmo Merge Sort.
+         * 
+         * @param vector El vector a ordenar.
+         * @param inicio El inicio del subvector o lado izquierdo.
+         * @param fin El fin de subvector o lado derecho del subvector.
+         */
+        static void sort(std::vector<int>&,int,int);
+        /**
+         * @brief Funcion que se encarga de hacer el merge.
+         * 
+         * @param vector El vector a ordenar.
+         * @param inicio El índice izquierdo del subvector.
+         * @param medio El índice medio del subvector.
+         * @param fin El índice derecho del subvector.
+         */
         static void merge(std::vector<int>&,int,int,int);
 };

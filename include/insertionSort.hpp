@@ -3,10 +3,20 @@
 
 class InsertionSort{
     private:
+        /**
+         * @brief Función para ordenar un vector utilizando el algoritmo Insertion Sort.
+         * 
+         * @param vector El vector a ordenar.
+         * @param indice_1 El indice de los elementos que queremos hacer swap.
+         * @param indice_2 El indice de los elementos que queremos hacer swap.
+         */
         static void swap(std::vector<int>&,int,int);
-        static void insertionSort(std::vector<int>&,int);
         
     public:
-        static void sort(std::vector<std::vector<int>>&);
-        static void print(std::vector<std::vector<int>>&);
+        /**
+         * @brief Función para ordenar un vector utilizando el algoritmo Insertion Sort.
+         * 
+         * @param vector El vector a ordenar.
+         */
+        static void sort(std::vector<int>&);
 };
