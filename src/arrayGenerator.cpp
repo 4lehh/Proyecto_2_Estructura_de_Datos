@@ -1,12 +1,16 @@
 #include <iostream>
+#include <string>
 #include <ctime>
 #include <cstdlib>
 #include <string>
 #include <fstream>
 
-void randomGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_numeros){
+void randomGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_numeros, std::string nombre_archivo){
     
-    std::ofstream archivo("arreglos.bin", std::ios::out | std::ios::trunc | std::ios::binary);
+    std::ofstream archivo(nombre_archivo, std::ios::out | std::ios::trunc | std::ios::binary);
+    // std::ios::out indica que el archivo se abrirá para escritura.
+    // std::ios::trunc indica que el archivo se truncará a cero bytes si ya existe.
+    // std::ios::binary indica que el archivo se abrirá en modo binario.
 
     if(!archivo){
         std::cout << "Error al abrir el archivo\n";
@@ -25,9 +29,9 @@ void randomGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_
     archivo.close();
 }
 
-void ascendingGenerator(int numero_de_arreglos, int largo_de_arreglos){
+void ascendingGenerator(int numero_de_arreglos, int largo_de_arreglos, std::string nombre_archivo){
     
-    std::ofstream archivo("arreglos.txt", std::ios::out | std::ios::trunc);
+    std::ofstream archivo(nombre_archivo, std::ios::out | std::ios::trunc | std::ios::binary);
 
     if(!archivo){
         std::cout << "Error al abrir el archivo\n";
@@ -46,9 +50,9 @@ void ascendingGenerator(int numero_de_arreglos, int largo_de_arreglos){
     archivo.close();
 }
 
-void descendingGenerator(int numero_de_arreglos, int largo_de_arreglos){
+void descendingGenerator(int numero_de_arreglos, int largo_de_arreglos, std::string nombre_archivo){
     
-    std::ofstream archivo("arreglos.txt", std::ios::out | std::ios::trunc);
+    std::ofstream archivo(nombre_archivo, std::ios::out | std::ios::trunc | std::ios::binary);
 
     if(!archivo){
         std::cout << "Error al abrir el archivo\n";
@@ -89,16 +93,18 @@ int main(int argc, char* argv[]){
     int _largo_de_arreglos = std::stoi(argv[2]);
     int _dominio_numeros = std::stoi(argv[3]);
     int _forma_de_los_numeros = std::stoi(argv[4]);
+
+    std::string nombre_archivo = "arreglos.bin";
      
     switch (_forma_de_los_numeros){
         case 1:
-            randomGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros);
+            randomGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros, nombre_archivo);
             break;
         case 2:
-            ascendingGenerator(_numero_de_arreglos, _largo_de_arreglos);
+            ascendingGenerator(_numero_de_arreglos, _largo_de_arreglos, nombre_archivo);
             break;
         case 3:
-            descendingGenerator(_numero_de_arreglos, _largo_de_arreglos);
+            descendingGenerator(_numero_de_arreglos, _largo_de_arreglos, nombre_archivo);
             break;
         default:
             std::cerr << "Número de orden no valido\n";
@@ -107,3 +113,6 @@ int main(int argc, char* argv[]){
 
     return 0;
 }
+
+// Compilación:
+// g++ src/arrayGenerator.cpp -o arrayGenerator.out -Wall -O2
