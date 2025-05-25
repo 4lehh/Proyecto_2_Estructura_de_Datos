@@ -7,3 +7,5 @@ vgcore*
 */build/*.o
 build/*.o
 *.txt
+build/
+*.bin
