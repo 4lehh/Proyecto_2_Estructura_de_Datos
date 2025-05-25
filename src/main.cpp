@@ -8,81 +8,67 @@
 #include <chrono>
 #include <functional>
 
-void pasarArreglos(std::vector<std::vector<int>> &vector){
-    std::ifstream archivo("arreglos.bin", std::ios::in | std::ios::binary);
+bool isSorted(const vc &vector) {
+    return std::is_sorted(vector.begin(), vector.end());
+}
 
-    if(!archivo) throw std::runtime_error("No se pudo abrir el archivo");
+void testeo(const std::string &nombre_archivo, 
+    const std::function<void(std::vector<int>&)> sortFunction,
+    const std::string &algoritmo){
+
+    std::ifstream archivo(nombre_archivo, std::ios::in | std::ios::binary);
+    if(!archivo) throw std::runtime_error(ROJO "No se pudo abrir el archivo" RESET_COLOR);
 
     int numero_de_arreglos, largo_de_arreglos;
     archivo.read(reinterpret_cast<char*>(&numero_de_arreglos), sizeof(int));
     archivo.read(reinterpret_cast<char*>(&largo_de_arreglos), sizeof(int));
 
+    std::vector<int> fila(largo_de_arreglos);
+    double avg_time = 0.0;
+
     for (int i = 0; i < numero_de_arreglos; i++) {
-        std::vector<int> fila(largo_de_arreglos);
         archivo.read(reinterpret_cast<char*>(fila.data()), largo_de_arreglos * sizeof(int));
-        vector.push_back(fila);
-    }
 
-    archivo.close();
-}
-
-void testeo(std::vector<std::vector<int>> &vector, 
-    const std::function<void(std::vector<int>&)> sortFunction,
-    const std::string &algoritmo){
-
-    // Obtenemos el vector de vectores
-    try {
-        pasarArreglos(vector);
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
-        return;
-    }
-    
-    // Variables para cuantificar el tiempo promedio
-    double avg_time = 0, cantidad_elementos = 0, tamaño;
-
-    // Ordenar los elementos
-    for(auto&fila : vector){
-        
         auto start = std::chrono::high_resolution_clock::now();
         
-        sortFunction(fila);               
+        sortFunction(fila);
         
         auto end = std::chrono::high_resolution_clock::now();
         
         std::chrono::duration<double, std::milli> duration = end - start;
-        
-        avg_time += duration.count(), cantidad_elementos++;
+
+        avg_time += duration.count();
+
+        if (!isSorted(fila)) {
+            std::cerr << ROJO "Error: El arreglo no está ordenado correctamente.\n";
+            std::cerr << "Algoritmo: " << algoritmo << RESET_COLOR "\n";
+            archivo.close();
+            return;
+        }
+
+        fila.clear();
+        fila.resize(largo_de_arreglos);
     }
 
-    std::cout << "Tiempo de ejecucion promedio de " << algoritmo << ": " << avg_time / cantidad_elementos << "\n";
+    archivo.close();
+
+    std::cout << VERDE "Tiempo de ejecucion promedio de " << algoritmo << ": " << avg_time / (double)numero_de_arreglos << RESET_COLOR "\n";
 }
 
 int main(){
     FunctionOptimization();
 
     std::vector<std::vector<int>> vector;
+
+    std::string nombre_archivo = "arreglos.bin";
     
-    testeo(vector, [](std::vector<int>& v) {MergeSort::sort(v);}, "MergeSort");
-    testeo(vector, [](std::vector<int>& v) {InsertionSort::sort(v);}, "InsertionSort");
-    testeo(vector, [](std::vector<int>& v) {HeapSort::sort(v);}, "HeapSort");
-    testeo(vector, [](std::vector<int>& v) {QuickSort::sort(v);}, "QuickSort");
+    testeo(nombre_archivo, [](std::vector<int>& v) {MergeSort::sort(v);}, "MergeSort");
+    //testeo(nombre_archivo, [](std::vector<int>& v) {InsertionSort::sort(v);}, "InsertionSort");
+    testeo(nombre_archivo, [](std::vector<int>& v) {HeapSort::sort(v);}, "HeapSort");
+    testeo(nombre_archivo, [](std::vector<int>& v) {QuickSort::sort(v);}, "QuickSort");
 
     /*
-    Falta adaptar el main para que pase los vectores uno por uno a cada algoritmo,
-    los que hay que modificar son los que estan sin comentar.
-
-    pasarArreglos(vector);
-    HeapSort::sort(vector);
-
-    pasarArreglos(vector);
-    QuickSort::sort(vector);
-    */
-
-    /*
-    
-    compilar: g++ -std=c++17 -Iinclude main.cpp heapSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp -o main.out -O2
-    
+    compilar: g++ -I include main.cpp heapSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp -o main.out -O2
     */
     return 0;
 }
