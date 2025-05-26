@@ -7,6 +7,7 @@
 #include <string>
 #include <chrono>
 #include <functional>
+#include <algorithm>
 
 bool isSorted(const vc &vector) {
     return std::is_sorted(vector.begin(), vector.end());
@@ -63,7 +64,7 @@ int main(){
     std::string nombre_archivo = "arreglos.bin";
     
     testeo(nombre_archivo, [](std::vector<int>& v) {MergeSort::sort(v);}, "MergeSort");
-    //testeo(nombre_archivo, [](std::vector<int>& v) {InsertionSort::sort(v);}, "InsertionSort");
+    testeo(nombre_archivo, [](std::vector<int>& v) {InsertionSort::sort(v);}, "InsertionSort");
     testeo(nombre_archivo, [](std::vector<int>& v) {HeapSort::sort(v);}, "HeapSort");
     testeo(nombre_archivo, [](std::vector<int>& v) {QuickSort::sort(v);}, "QuickSort");
 
