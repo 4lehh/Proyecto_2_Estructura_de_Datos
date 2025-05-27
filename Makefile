@@ -7,8 +7,8 @@ CXXFLAGS_WARNINGS = -Wextra -Wpedantic -Wshadow -Wconversion -Wsign-conversion -
 CXXFLAGS_OPTIMIZATIONS = -O2 -march=native -mtune=native
 CXXFLAGS_DEBUGGING = -g -ggdb
 
-CXXFLAGS_RELEASE = $(CXXFLAGS_BASE) $(CXXFLAGS_WARNINGS) $(CXXFLAGS_OPTIMIZATIONS)
-CXXFLAGS_DEBUG = $(CXXFLAGS_BASE) $(CXXFLAGS_WARNINGS) $(CXXFLAGS_DEBUGGING)
+CXXFLAGS_RELEASE = $(CXXFLAGS_BASE) $(CXXFLAGS_OPTIMIZATIONS)
+CXXFLAGS_DEBUG = $(CXXFLAGS_BASE) $(CXXFLAGS_DEBUGGING)
 
 CXXFLAGS = $(CXXFLAGS_RELEASE)
 
@@ -30,7 +30,7 @@ $(TARGET): $(OBJECTS)
 
 # Regla para compilar archivos objeto
 $(OBJ_DIR)/%.o: src/%.cpp | $(OBJ_DIR)
-	@echo "Compilando $< en $@..."
+	@echo "Compilando $<..."
 	@$(CXX) -c $< -o $@ $(CXXFLAGS)
 
 # Crear el directorio obj si no existe

@@ -1,5 +1,4 @@
 #pragma once 
-#include <vector>
 
 /**
  * @file mergeSort.hpp
@@ -11,6 +10,8 @@
  * @note La implementación utiliza un vector de enteros como entrada.
  */
 
+#include "definiciones.hpp"
+
 class MergeSort{
     public:
         /**
@@ -18,7 +19,8 @@ class MergeSort{
          * 
          * @param vector El vector a ordenar.
          */
-        static void sort(std::vector<int>&);
+        static void sort(vc& vector);
+
     private:
         /**
          * @brief Función para ordenar un vector utilizando el algoritmo Merge Sort.
@@ -27,7 +29,8 @@ class MergeSort{
          * @param inicio El inicio del subvector o lado izquierdo.
          * @param fin El fin de subvector o lado derecho del subvector.
          */
-        static void sort(std::vector<int>&,int,int);
+        static void sort(vc& vector, int inicio, int fin);
+
         /**
          * @brief Funcion que se encarga de hacer el merge.
          * 
@@ -36,5 +39,5 @@ class MergeSort{
          * @param medio El índice medio del subvector.
          * @param fin El índice derecho del subvector.
          */
-        static void merge(std::vector<int>&,int,int,int);
+        static void merge(vc& vector, int inicio, int medio, int fin);
 };
