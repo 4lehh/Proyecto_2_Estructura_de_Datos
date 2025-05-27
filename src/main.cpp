@@ -1,5 +1,6 @@
 #include "../include/definiciones.hpp"
 #include "../include/sorts.hpp"
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -9,13 +10,22 @@
 #include <functional>
 #include <algorithm>
 
+/**
+ * @brief Función para verificar si un vector está ordenado.
+ * 
+ * @param arr El vector a verificar.
+ * @return true Si el vector está ordenado.
+ * @return false Si el vector no está ordenado.
+ */
 bool isSorted(const vc &vector) {
     return std::is_sorted(vector.begin(), vector.end());
 }
 
-void testeo(const std::string &nombre_archivo, 
-    const std::function<void(std::vector<int>&)> sortFunction,
-    const std::string &algoritmo){
+void testeo(
+        const std::string &nombre_archivo, 
+        const std::function<void(std::vector<int>&)> sortFunction,
+        const std::string &algoritmo
+    ){
 
     std::ifstream archivo(nombre_archivo, std::ios::in | std::ios::binary);
     if(!archivo) throw std::runtime_error(ROJO "No se pudo abrir el archivo" RESET_COLOR);
@@ -53,6 +63,8 @@ void testeo(const std::string &nombre_archivo,
 
     archivo.close();
 
+    imprimir(numero_de_arreglos << " " << largo_de_arreglos);
+
     std::cout << VERDE "Tiempo de ejecucion promedio de " << algoritmo << ": " << avg_time / (double)numero_de_arreglos << RESET_COLOR "\n";
 }
 
@@ -62,11 +74,18 @@ int main(){
     std::vector<std::vector<int>> vector;
 
     std::string nombre_archivo = "arreglos.bin";
-    
-    testeo(nombre_archivo, [](std::vector<int>& v) {MergeSort::sort(v);}, "MergeSort");
-    testeo(nombre_archivo, [](std::vector<int>& v) {InsertionSort::sort(v);}, "InsertionSort");
-    testeo(nombre_archivo, [](std::vector<int>& v) {HeapSort::sort(v);}, "HeapSort");
-    testeo(nombre_archivo, [](std::vector<int>& v) {QuickSort::sort(v);}, "QuickSort");
+
+    // Vector de algoritmos a probar
+    std::vector<std::pair<std::string, void(*)(vc&)>> algoritmos = {
+        {"HeapSort", HeapSort::sort},
+        {"InsertionSort", InsertionSort::sort},
+        {"MergeSort", MergeSort::sort},
+        {"QuickSort", QuickSort::sort}
+    };
+
+    for (const auto &[nombre, funcion] : algoritmos) {
+        testeo(nombre_archivo, funcion, nombre);
+    }
 
     /*
     compilar: g++ -I include main.cpp heapSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp -o main.out -O2
