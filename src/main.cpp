@@ -23,7 +23,7 @@ bool isSorted(const vc &vector) {
 
 void testeo(
         const std::string &nombre_archivo, 
-        const std::function<void(std::vector<int>&)> sortFunction,
+        const std::function<void(std::vector<int>&)> &sortFunction,
         const std::string &algoritmo
     ){
 
@@ -51,21 +51,17 @@ void testeo(
         avg_time += duration.count();
 
         if (!isSorted(fila)) {
-            std::cerr << ROJO "Error: El arreglo no está ordenado correctamente.\n";
-            std::cerr << "Algoritmo: " << algoritmo << RESET_COLOR "\n";
+            std::cerr << ROJO "Error: El arreglo no está ordenado correctamente.\n" 
+                      << "Algoritmo: " << algoritmo << RESET_COLOR "\n";
             archivo.close();
             return;
         }
-
-        fila.clear();
-        fila.resize(largo_de_arreglos);
     }
 
     archivo.close();
 
-    imprimir(numero_de_arreglos << " " << largo_de_arreglos);
-
-    std::cout << VERDE "Tiempo de ejecucion promedio de " << algoritmo << ": " << avg_time / (double)numero_de_arreglos << RESET_COLOR "\n";
+    std::cout << VERDE "Tiempo de ejecucion promedio de " << algoritmo << ": "
+              << avg_time / (double)numero_de_arreglos << RESET_COLOR "\n";
 }
 
 int main(){
