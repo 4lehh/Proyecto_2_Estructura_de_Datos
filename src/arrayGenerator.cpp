@@ -4,89 +4,65 @@
 #include <cstdlib>
 #include <string>
 #include <fstream>
+#include <filesystem>   // Para manejar carpetas
 
-std::ofstream abrir_archivo(const std::string nombre_archivo, int numero_de_arreglos, int largo_de_arreglos) {
-    std::ofstream archivo(nombre_archivo, std::ios::out | std::ios::trunc | std::ios::binary);
-    // std::ios::out indica que el archivo se abrirá para escritura.
-    // std::ios::trunc indica que el archivo se truncará a cero bytes si ya existe.
-    // std::ios::binary indica que el archivo se abrirá en modo binario.
+#define NOMBRE_CARPETA "test"
 
-    if(!archivo){
-        throw "Error al abrir el archivo\n";
-    }
-
-    archivo.write(reinterpret_cast<char*>(&numero_de_arreglos), sizeof(int));
-    archivo.write(reinterpret_cast<char*>(&largo_de_arreglos), sizeof(int));
-
-    return archivo;
-}
-
-void randomGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_numeros, std::string nombre_archivo) {
-    std::ofstream archivo;
-
-    try {
-        archivo = abrir_archivo(nombre_archivo, numero_de_arreglos, largo_de_arreglos);
-    }
-    catch(const std::exception& e) {
-        std::cerr << e.what() << '\n';
-        return;
-    }
-    
+void randomGenerator(const int numero_de_arreglos, const int largo_de_arreglos, const int dominio_numeros) {
     std::srand(std::time(0));
 
-    for (int i = 0; i < numero_de_arreglos; i++) {
+    std::string nombre_archivo_base = NOMBRE_CARPETA + std::string("/2_") + std::to_string(std::time(0));
+
+    for(int i = 0; i < numero_de_arreglos; i++){
+        std::string nombre_archivo = nombre_archivo_base + std::to_string(i) + ".bin";
+        std::ofstream archivo(nombre_archivo, std::ios::out | std::ios::trunc | std::ios::binary);
+
+        if(!archivo) throw "Error al abrir el archivo\n";
+
         for (int j = 0; j < largo_de_arreglos; j++) {
             int numero = rand() % dominio_numeros;
             archivo.write(reinterpret_cast<char*>(&numero), sizeof(int));
         }
+        archivo.close();
     }
-
-    archivo.close();
 }
 
-void ascendingGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_numeros, std::string nombre_archivo) {
-    std::ofstream archivo;
-
-    try {
-        archivo = abrir_archivo(nombre_archivo, numero_de_arreglos, largo_de_arreglos);
-    }
-    catch(const std::exception& e) {
-        std::cerr << e.what() << '\n';
-        return;
-    }
+void ascendingGenerator(const int numero_de_arreglos, const int largo_de_arreglos, const int dominio_numeros) {
+    std::string nombre_archivo_base = NOMBRE_CARPETA + std::string("/2_") + std::to_string(std::time(0));
 
     for(int i = 0; i < numero_de_arreglos; i++){
-        for(int j = 0 ; j < largo_de_arreglos; j++){
-            archivo << j % dominio_numeros << " ";
+        std::string nombre_archivo = nombre_archivo_base + std::to_string(i) + ".bin";
+        std::ofstream archivo(nombre_archivo, std::ios::out | std::ios::trunc | std::ios::binary);
+
+        if(!archivo) throw "Error al abrir el archivo\n";
+
+        for(int j = 0 ; j < largo_de_arreglos; j++) {
+            int numero = j % dominio_numeros;
+            archivo.write(reinterpret_cast<char*>(&numero), sizeof(int));
         }
-        archivo << "\n";
+
+        archivo.close();
     }
 
-    archivo.close();
 }
 
-void descendingGenerator(int numero_de_arreglos, int largo_de_arreglos, int dominio_numeros, std::string nombre_archivo) {
-    std::ofstream archivo;
-
-    try {
-        archivo = abrir_archivo(nombre_archivo, numero_de_arreglos, largo_de_arreglos);
-    }
-    catch(const std::exception& e) {
-        std::cerr << e.what() << '\n';
-        return;
-    }
-
-
+void descendingGenerator(const int numero_de_arreglos, const int largo_de_arreglos, const int dominio_numeros) {
+    std::string nombre_archivo_base = NOMBRE_CARPETA + std::string("/2_") + std::to_string(std::time(0));
+    
     for(int i = 0; i < numero_de_arreglos; i++){
-        for(int j = largo_de_arreglos ; j < 0; j--){
-            archivo << j % dominio_numeros << " ";
+        std::string nombre_archivo = nombre_archivo_base + std::to_string(i) + ".bin";
+        std::ofstream archivo(nombre_archivo, std::ios::out | std::ios::trunc | std::ios::binary);
+
+        if(!archivo) throw "Error al abrir el archivo\n";
+
+        for(int j = largo_de_arreglos - 1 ; j >= 0; j--) {
+            int numero = j % dominio_numeros;
+            archivo.write(reinterpret_cast<char*>(&numero), sizeof(int));
         }
-        archivo << "\n";
+
+        archivo.close();
     }
-
-    archivo.close();
 }
-
 
 int main(int argc, char* argv[]){
     
@@ -115,25 +91,38 @@ int main(int argc, char* argv[]){
     int _forma_de_los_numeros = std::stoi(argv[4]);
 
     if(_dominio_numeros <= 0) {
-        std::cout << "Dominio de los Numeros fuera de rango" << std::endl;
+        std::cout << "Dominio de los Numeros fuera de rango." << std::endl;
         return 1;
     }
 
-    std::string nombre_archivo = "arreglos.bin";
-     
+    if (!std::filesystem::exists(NOMBRE_CARPETA)) {
+        if (std::filesystem::is_directory(NOMBRE_CARPETA)) {
+            std::cout << "Ya existe un archivo que se llama: " << NOMBRE_CARPETA
+                      << ", por lo que no se puede crear la carpeta." << std::endl;
+            return 0;
+        }
+        else {
+            if (!std::filesystem::create_directory(NOMBRE_CARPETA)) {
+                std::cout << "No se pudo crear la carpeta \"test\" correctamente.\n";
+                return 1;
+            }
+        }
+    }
+
+    std::cout << _numero_de_arreglos << std::endl;
+
     switch (_forma_de_los_numeros){
         case 1:
-            randomGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros, nombre_archivo);
+            randomGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros);
             break;
         case 2:
-            ascendingGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros, nombre_archivo);
+            ascendingGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros);
             break;
         case 3:
-            descendingGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros, nombre_archivo);
+            descendingGenerator(_numero_de_arreglos, _largo_de_arreglos, _dominio_numeros);
             break;
         default:
             std::cerr << "Número de orden no valido\n";
-            return 1;
     }
 
     return 0;
