@@ -11,7 +11,7 @@
 void randomGenerator(const int numero_de_arreglos, const int largo_de_arreglos, const int dominio_numeros) {
     std::srand(std::time(0));
 
-    std::string nombre_archivo_base = NOMBRE_CARPETA + std::string("/2_") + std::to_string(std::time(0));
+    std::string nombre_archivo_base = NOMBRE_CARPETA + std::string("/1_") + std::to_string(std::time(0));
 
     for(int i = 0; i < numero_de_arreglos; i++){
         std::string nombre_archivo = nombre_archivo_base + std::to_string(i) + ".bin";
@@ -47,7 +47,7 @@ void ascendingGenerator(const int numero_de_arreglos, const int largo_de_arreglo
 }
 
 void descendingGenerator(const int numero_de_arreglos, const int largo_de_arreglos, const int dominio_numeros) {
-    std::string nombre_archivo_base = NOMBRE_CARPETA + std::string("/2_") + std::to_string(std::time(0));
+    std::string nombre_archivo_base = NOMBRE_CARPETA + std::string("/3_") + std::to_string(std::time(0));
     
     for(int i = 0; i < numero_de_arreglos; i++){
         std::string nombre_archivo = nombre_archivo_base + std::to_string(i) + ".bin";
