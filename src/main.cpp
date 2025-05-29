@@ -1,6 +1,6 @@
 #include "../include/definiciones.hpp"
 #include "../include/sorts.hpp"
-
+#include "../include/json.hpp"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -11,7 +11,36 @@
 #include <algorithm>
 #include <filesystem> // Para manejar las carpetas
 
-#define NOMBRE_CARPETA_TESTS "test"
+#define NOMBRE_CARPETA_TESTS "test/arrays"
+#define NOMBRE_CARPETA_JSON "test/json"
+
+void guardarJson(nlohmann::json &resultados){
+    try {
+        if (!std::filesystem::exists(NOMBRE_CARPETA_JSON)) {
+            if(!std::filesystem::create_directory(NOMBRE_CARPETA_JSON)){
+                throw std::runtime_error("La carpeta no pudo ser creada: " + std::string(NOMBRE_CARPETA_JSON));
+            }
+        }
+
+        if (!std::filesystem::is_directory(NOMBRE_CARPETA_JSON)) {
+            throw std::runtime_error("La ruta no es una carpeta: " + std::string(NOMBRE_CARPETA_JSON));
+        }
+        
+        std::string nombre_archivo_test = NOMBRE_CARPETA_JSON + std::string("/resultados.json");
+        std::ofstream salida(nombre_archivo_test);
+        
+        if (!salida) {
+            std::cerr << "Error al crear el archivo!" << std::endl;
+            return;
+        }
+
+        salida << resultados.dump(4); // Guardamos el JSON con indentación
+        salida.close();
+
+    } catch(const std::exception &e){
+        std::cerr << "Error al buscaar el archivos: " << e.what() << std::endl;
+    }
+}
 
 std::vector<std::string> archivosEnCarpeta() {
     std::vector<std::string> nombres_archivos;
@@ -51,7 +80,7 @@ bool isSorted(const vc &vector) {
     return std::is_sorted(vector.begin(), vector.end());
 }
 
-void testeo(
+double testeo(
         const std::string &nombre_archivo, 
         const std::function<void(std::vector<int>&)> &sortFunction,
         const std::string &algoritmo
@@ -89,12 +118,14 @@ void testeo(
     std::chrono::duration<double, std::milli> duration = end - start;
 
     std::cout << VERDE "Tiempo de ejecucion de " << algoritmo << ": "
-              << duration.count()  << RESET_COLOR "\n";
+              << duration.count()  << "ms\n"<<  RESET_COLOR;
 
     if (!isSorted(numeros)) {
         std::cerr << ROJO "Error: El arreglo no está ordenado correctamente.\n" 
                     << "Algoritmo: " << algoritmo << RESET_COLOR "\n";
     }
+
+    return duration.count();
 }
 
 int main(){
@@ -110,13 +141,15 @@ int main(){
     };
 
     std::vector<std::string> nombres_archivos = archivosEnCarpeta();
+    
+    nlohmann::json resultados;
 
     for (auto nombre_archivo : nombres_archivos) {
         std::cout << "Testeando el archivo: " << nombre_archivo << std::endl;
-
         for (const auto &[nombre_funcion, funcion] : algoritmos) {
             try {
-                testeo(nombre_archivo, funcion, nombre_funcion);
+                // Almacenar los resultados
+                resultados[nombre_archivo][nombre_funcion] = testeo(nombre_archivo, funcion, nombre_funcion);
             }
             catch(const std::exception& e) {
                 std::cerr << e.what() << '\n';
@@ -126,6 +159,8 @@ int main(){
 
         std::cout << std::endl;
     }
+
+    guardarJson(resultados);
 
     /*
     compilar: g++ -I include main.cpp heapSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp -o main.out -O2

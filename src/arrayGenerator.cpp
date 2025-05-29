@@ -6,7 +6,7 @@
 #include <fstream>
 #include <filesystem>   // Para manejar carpetas
 
-#define NOMBRE_CARPETA "test"
+#define NOMBRE_CARPETA "test/arrays"
 
 void randomGenerator(const int numero_de_arreglos, const int largo_de_arreglos, const int dominio_numeros) {
     std::srand(std::time(0));
@@ -97,17 +97,17 @@ int main(int argc, char* argv[]){
 
     if (!std::filesystem::exists(NOMBRE_CARPETA)) {
         if (std::filesystem::is_directory(NOMBRE_CARPETA)) {
-            std::cout << "Ya existe un archivo que se llama: " << NOMBRE_CARPETA
-                      << ", por lo que no se puede crear la carpeta." << std::endl;
+            std::cout << "Ya existe un archivo que se llama: " << NOMBRE_CARPETA << std::endl;
             return 0;
         }
         else {
-            if (!std::filesystem::create_directory(NOMBRE_CARPETA)) {
-                std::cout << "No se pudo crear la carpeta \"test\" correctamente.\n";
+            if (!std::filesystem::create_directories(NOMBRE_CARPETA)) {
+                std::cout << "No se pudo crear la carpeta..." << std::endl;
                 return 1;
             }
         }
     }
+
 
     std::cout << _numero_de_arreglos << std::endl;
 
