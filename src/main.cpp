@@ -14,7 +14,22 @@
 #define NOMBRE_CARPETA_TESTS "test/arrays"
 #define NOMBRE_CARPETA_JSON "test/json"
 
-void guardarJson(nlohmann::json &resultados){
+int numero_elementos_array = 0; // Ver el numero de elementos de un array
+
+std::string obtenerNombreOrden(const std::string& nombre_archivo) {
+    std::filesystem::path p(nombre_archivo);
+    std::string nombre_archivo_nuevo = p.filename().string();
+
+    size_t pos = nombre_archivo_nuevo.find('_');
+    if (pos != std::string::npos) {
+        return nombre_archivo_nuevo.substr(0, pos);
+    } else {
+        return nombre_archivo_nuevo; // No encontró '_', devuelve todo
+    }
+}
+
+
+void guardarJson(nlohmann::json &resultados, std::string &orden){
     try {
         if (!std::filesystem::exists(NOMBRE_CARPETA_JSON)) {
             if(!std::filesystem::create_directory(NOMBRE_CARPETA_JSON)){
@@ -26,8 +41,12 @@ void guardarJson(nlohmann::json &resultados){
             throw std::runtime_error("La ruta no es una carpeta: " + std::string(NOMBRE_CARPETA_JSON));
         }
         
-        std::string nombre_archivo_test = NOMBRE_CARPETA_JSON + std::string("/resultados.json");
-        std::ofstream salida(nombre_archivo_test);
+        std::ostringstream nombre_archivo_test;
+        nombre_archivo_test << NOMBRE_CARPETA_JSON << "/resultados_" << std::string(orden) << "_" << numero_elementos_array << ".json";
+
+        // std::string nombre_archivo_test = std::format("{}{}{}{}", NOMBRE_CARPETA_JSON, "/resultados", resultados.size(), ".json");
+        // std::string nombre_archivo_test = NOMBRE_CARPETA_JSON + std::string("/resultados") + std::string(tamaño) + std::string(".json");
+        std::ofstream salida(nombre_archivo_test.str());
         
         if (!salida) {
             std::cerr << "Error al crear el archivo!" << std::endl;
@@ -88,6 +107,7 @@ double testeo(
     std::ifstream archivo(nombre_archivo, std::ios::in | std::ios::binary); // Abrir en modo binario
 
     if(!archivo) throw std::runtime_error(ROJO "No se pudo abrir el archivo: " AMARILLO + nombre_archivo + RESET_COLOR);
+    
 
     // Mover el puntero al final para determinar el tamaño del archivo
     archivo.seekg(0, std::ios::end);
@@ -97,6 +117,9 @@ double testeo(
     if (tamaño_archivo % sizeof(int) != 0) throw std::runtime_error(ROJO "El archivo no parece contener enteros válidos." RESET_COLOR);
 
     size_t numero_de_enteros = tamaño_archivo / sizeof(int);
+
+    if(!numero_elementos_array) numero_elementos_array = numero_de_enteros;
+    
     std::vector<int> numeros(numero_de_enteros);
 
     // Leer todos los números
@@ -143,6 +166,7 @@ int main(){
     std::vector<std::string> nombres_archivos = archivosEnCarpeta();
     
     nlohmann::json resultados;
+    std::string orden = obtenerNombreOrden(nombres_archivos[0]);
 
     for (auto nombre_archivo : nombres_archivos) {
         std::cout << "Testeando el archivo: " << nombre_archivo << std::endl;
@@ -159,9 +183,8 @@ int main(){
 
         std::cout << std::endl;
     }
-
-    guardarJson(resultados);
-
+    
+    guardarJson(resultados, orden);
     /*
     compilar: g++ -I include main.cpp heapSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp -o main.out -O2
     */
