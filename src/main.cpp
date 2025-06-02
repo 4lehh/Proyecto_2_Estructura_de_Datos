@@ -16,6 +16,11 @@
 
 int numero_elementos_array = 0; // Ver el numero de elementos de un array
 
+// Adaptador para std::sort
+void adapterSort(std::vector<int>& vector){
+    std::sort(vector.begin(), vector.end());
+}
+
 std::string obtenerNombreOrden(const std::string& nombre_archivo) {
     std::filesystem::path p(nombre_archivo);
     std::string nombre_archivo_nuevo = p.filename().string();
@@ -140,8 +145,8 @@ double testeo(
     
     std::chrono::duration<double, std::milli> duration = end - start;
 
-    std::cout << VERDE "Tiempo de ejecucion de " << algoritmo << ": "
-              << duration.count()  << "ms\n"<<  RESET_COLOR;
+    // std::cout << VERDE "Tiempo de ejecucion de " << algoritmo << ": "
+    //          << duration.count()  << "ms\n"<<  RESET_COLOR;
 
     if (!isSorted(numeros)) {
         std::cerr << ROJO "Error: El arreglo no está ordenado correctamente.\n" 
@@ -160,7 +165,8 @@ int main(){
         {"HeapSort", HeapSort::sort},
         {"InsertionSort", InsertionSort::sort},
         {"MergeSort", MergeSort::sort},
-        {"QuickSort", QuickSort::sort}
+        {"QuickSort", QuickSort::sort},
+        {"Sort C++", adapterSort}
     };
 
     std::vector<std::string> nombres_archivos = archivosEnCarpeta();
@@ -169,7 +175,7 @@ int main(){
     std::string orden = obtenerNombreOrden(nombres_archivos[0]);
 
     for (auto nombre_archivo : nombres_archivos) {
-        std::cout << "Testeando el archivo: " << nombre_archivo << std::endl;
+        // std::cout << "Testeando el archivo: " << nombre_archivo << std::endl;
         for (const auto &[nombre_funcion, funcion] : algoritmos) {
             try {
                 // Almacenar los resultados
@@ -181,7 +187,7 @@ int main(){
             }
         }
 
-        std::cout << std::endl;
+        // std::cout << std::endl;
     }
     
     guardarJson(resultados, orden);
