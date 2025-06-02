@@ -1,3 +1,5 @@
+import numpy as np
+from scipy.interpolate import make_interp_spline
 import os
 import json
 import pandas as pd
@@ -74,7 +76,38 @@ def promediosGenerales(ruta: str = None) -> list:
     
     return datos
 
-def grafica(promedios: list, numeros: list) -> None:
+def grafica(promedios: list, tamanos: list, orden: str) -> None:
+    algoritmos = list(zip(*promedios))
+    nombres_algoritmos = ["MergeSort", "QuickSort", "InsertionSort", "HeapSort", "Sort C++"]
+
+    plt.figure(figsize=(10, 6))
+
+    for nombre, tiempos in zip(nombres_algoritmos, algoritmos):
+        x = np.array(tamanos)
+        y = np.array(tiempos)
+
+        if len(x) >= 4:  # El spline cúbico necesita al menos 4 puntos
+            x_suave = np.linspace(x.min(), x.max(), 300)
+            spl = make_interp_spline(x, y, k=3)
+            y_suave = spl(x_suave)
+            plt.plot(x_suave, y_suave, label=nombre)
+        else:
+            # Si hay muy pocos puntos, graficamos normal
+            plt.plot(x, y, label=nombre, marker='o')
+
+        # Opcional: muestra los puntos reales con marcadores
+        plt.scatter(x, y)
+
+    plt.xscale("log", base=2)
+    plt.xlabel("Tamaño del arreglo")
+    plt.ylabel("Tiempo promedio (ms)")
+    plt.title(f"Comparación de algoritmos de ordenamiento con elementos {orden}")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+def grafica1(promedios: list, numeros: list, orden: str) -> None:
     algoritmos = list(zip(*promedios))
 
     nombres_algoritmos = ["MergeSort", "QuickSort", "InsertionSort", "HeapSort", "Sort C++"]
@@ -88,8 +121,8 @@ def grafica(promedios: list, numeros: list) -> None:
 
     plt.xscale("log", base=2)  # Escala logarítmica base 2 para tamaños
     plt.xlabel("Tamaño del arreglo")
-    plt.ylabel("Tiempo promedio (s)")
-    plt.title("Comparación de algoritmos de ordenamiento")
+    plt.ylabel("Tiempo promedio (ms)")
+    plt.title(f"Comparación de algoritmos de ordenamiento con elementos {orden}")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
@@ -113,7 +146,7 @@ promedio_random = obtenerPromedio("resultados_random_*.json", r"resultados_rando
 promedio_ascendente = obtenerPromedio("resultados_ascending*.json", r"resultados_ascending_(\d+)\.json")                 # Promedio de los json ascendentes
 promedio_descendente = obtenerPromedio("resultados_descending*.json", r"resultados_descending_(\d+)\.json")             # Promedio de los json descendentes
 
-grafica(promedio_random, tamanos)
-grafica(promedio_ascendente, tamanos)
-grafica(promedio_descendente, tamanos)
+grafica(promedio_random, tamanos, "random")
+grafica(promedio_ascendente, tamanos, "ascendentes")
+grafica(promedio_descendente, tamanos, "descendentes")
 
