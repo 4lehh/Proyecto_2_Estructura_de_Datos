@@ -53,11 +53,3 @@ void TimSort::merge(vc& vector, int inicio, int medio, int fin){
     // Los elementos restantes del subvector derecho no necesitan ser copiados
     // porque ya están en su lugar en el vector original
 }
-
-int main(){
-    std::vector<int> vector = {1, 8, 7, 00, -1, 66, 24, -141412, 7};
-    TimSort::sort(vector);
-
-    for(auto i : vector) std::cout << i << " ";
-    std::cout << "\n";
-}
