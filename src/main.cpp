@@ -166,6 +166,7 @@ int main(){
         {"InsertionSort", InsertionSort::sort},
         {"MergeSort", MergeSort::sort},
         {"QuickSort", QuickSort::sort},
+        {"TimSort", TimSort::sort},
         {"Sort C++", adapterSort}
     };
 

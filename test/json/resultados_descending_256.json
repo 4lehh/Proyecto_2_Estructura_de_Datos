@@ -1,0 +1,802 @@
+{
+    "test/arrays/descending_17493325780.bin": {
+        "HeapSort": 0.003373,
+        "InsertionSort": 0.004359,
+        "MergeSort": 0.013224,
+        "QuickSort": 0.006261,
+        "Sort C++": 0.000959,
+        "TimSort": 0.00319
+    },
+    "test/arrays/descending_17493325781.bin": {
+        "HeapSort": 0.002997,
+        "InsertionSort": 0.003727,
+        "MergeSort": 0.011636,
+        "QuickSort": 0.004939,
+        "Sort C++": 0.000964,
+        "TimSort": 0.002796
+    },
+    "test/arrays/descending_174933257810.bin": {
+        "HeapSort": 0.002825,
+        "InsertionSort": 0.003529,
+        "MergeSort": 0.010994,
+        "QuickSort": 0.004886,
+        "Sort C++": 0.00087,
+        "TimSort": 0.002726
+    },
+    "test/arrays/descending_174933257811.bin": {
+        "HeapSort": 0.002945,
+        "InsertionSort": 0.003878,
+        "MergeSort": 0.011954,
+        "QuickSort": 0.005385,
+        "Sort C++": 0.00099,
+        "TimSort": 0.002865
+    },
+    "test/arrays/descending_174933257812.bin": {
+        "HeapSort": 0.002844,
+        "InsertionSort": 0.003699,
+        "MergeSort": 0.019183,
+        "QuickSort": 0.006735,
+        "Sort C++": 0.000868,
+        "TimSort": 0.002911
+    },
+    "test/arrays/descending_174933257813.bin": {
+        "HeapSort": 0.002716,
+        "InsertionSort": 0.003586,
+        "MergeSort": 0.011144,
+        "QuickSort": 0.005205,
+        "Sort C++": 0.000866,
+        "TimSort": 0.002797
+    },
+    "test/arrays/descending_174933257814.bin": {
+        "HeapSort": 0.009362,
+        "InsertionSort": 0.004255,
+        "MergeSort": 0.01279,
+        "QuickSort": 0.006455,
+        "Sort C++": 0.001196,
+        "TimSort": 0.003463
+    },
+    "test/arrays/descending_174933257815.bin": {
+        "HeapSort": 0.003595,
+        "InsertionSort": 0.004675,
+        "MergeSort": 0.014755,
+        "QuickSort": 0.006098,
+        "Sort C++": 0.001129,
+        "TimSort": 0.003473
+    },
+    "test/arrays/descending_174933257816.bin": {
+        "HeapSort": 0.003185,
+        "InsertionSort": 0.003736,
+        "MergeSort": 0.011816,
+        "QuickSort": 0.005059,
+        "Sort C++": 0.000967,
+        "TimSort": 0.002739
+    },
+    "test/arrays/descending_174933257817.bin": {
+        "HeapSort": 0.003295,
+        "InsertionSort": 0.004314,
+        "MergeSort": 0.01333,
+        "QuickSort": 0.005862,
+        "Sort C++": 0.00099,
+        "TimSort": 0.003209
+    },
+    "test/arrays/descending_174933257818.bin": {
+        "HeapSort": 0.003309,
+        "InsertionSort": 0.004352,
+        "MergeSort": 0.017741,
+        "QuickSort": 0.005902,
+        "Sort C++": 0.001034,
+        "TimSort": 0.003233
+    },
+    "test/arrays/descending_174933257819.bin": {
+        "HeapSort": 0.002987,
+        "InsertionSort": 0.003669,
+        "MergeSort": 0.011516,
+        "QuickSort": 0.005303,
+        "Sort C++": 0.000803,
+        "TimSort": 0.003263
+    },
+    "test/arrays/descending_17493325782.bin": {
+        "HeapSort": 0.002765,
+        "InsertionSort": 0.003566,
+        "MergeSort": 0.011073,
+        "QuickSort": 0.005212,
+        "Sort C++": 0.000832,
+        "TimSort": 0.002766
+    },
+    "test/arrays/descending_174933257820.bin": {
+        "HeapSort": 0.00341,
+        "InsertionSort": 0.004487,
+        "MergeSort": 0.0144,
+        "QuickSort": 0.00651,
+        "Sort C++": 0.001157,
+        "TimSort": 0.003495
+    },
+    "test/arrays/descending_174933257821.bin": {
+        "HeapSort": 0.0033,
+        "InsertionSort": 0.00437,
+        "MergeSort": 0.013252,
+        "QuickSort": 0.005725,
+        "Sort C++": 0.001042,
+        "TimSort": 0.003186
+    },
+    "test/arrays/descending_174933257822.bin": {
+        "HeapSort": 0.002996,
+        "InsertionSort": 0.003823,
+        "MergeSort": 0.011771,
+        "QuickSort": 0.005324,
+        "Sort C++": 0.000834,
+        "TimSort": 0.002951
+    },
+    "test/arrays/descending_174933257823.bin": {
+        "HeapSort": 0.003317,
+        "InsertionSort": 0.004302,
+        "MergeSort": 0.013257,
+        "QuickSort": 0.005964,
+        "Sort C++": 0.000983,
+        "TimSort": 0.003221
+    },
+    "test/arrays/descending_174933257824.bin": {
+        "HeapSort": 0.003296,
+        "InsertionSort": 0.004391,
+        "MergeSort": 0.013599,
+        "QuickSort": 0.00716,
+        "Sort C++": 0.00132,
+        "TimSort": 0.005073
+    },
+    "test/arrays/descending_174933257825.bin": {
+        "HeapSort": 0.003142,
+        "InsertionSort": 0.0042,
+        "MergeSort": 0.012942,
+        "QuickSort": 0.00556,
+        "Sort C++": 0.000979,
+        "TimSort": 0.003071
+    },
+    "test/arrays/descending_174933257826.bin": {
+        "HeapSort": 0.003312,
+        "InsertionSort": 0.00437,
+        "MergeSort": 0.013448,
+        "QuickSort": 0.005845,
+        "Sort C++": 0.000973,
+        "TimSort": 0.003273
+    },
+    "test/arrays/descending_174933257827.bin": {
+        "HeapSort": 0.003128,
+        "InsertionSort": 0.004124,
+        "MergeSort": 0.012702,
+        "QuickSort": 0.005474,
+        "Sort C++": 0.000955,
+        "TimSort": 0.003107
+    },
+    "test/arrays/descending_174933257828.bin": {
+        "HeapSort": 0.003249,
+        "InsertionSort": 0.00415,
+        "MergeSort": 0.012809,
+        "QuickSort": 0.005836,
+        "Sort C++": 0.000967,
+        "TimSort": 0.003173
+    },
+    "test/arrays/descending_174933257829.bin": {
+        "HeapSort": 0.004909,
+        "InsertionSort": 0.003903,
+        "MergeSort": 0.01588,
+        "QuickSort": 0.007062,
+        "Sort C++": 0.000939,
+        "TimSort": 0.002791
+    },
+    "test/arrays/descending_17493325783.bin": {
+        "HeapSort": 0.002839,
+        "InsertionSort": 0.003689,
+        "MergeSort": 0.011415,
+        "QuickSort": 0.005207,
+        "Sort C++": 0.000887,
+        "TimSort": 0.002799
+    },
+    "test/arrays/descending_174933257830.bin": {
+        "HeapSort": 0.002929,
+        "InsertionSort": 0.003841,
+        "MergeSort": 0.012142,
+        "QuickSort": 0.005087,
+        "Sort C++": 0.000913,
+        "TimSort": 0.002878
+    },
+    "test/arrays/descending_174933257831.bin": {
+        "HeapSort": 0.003066,
+        "InsertionSort": 0.004005,
+        "MergeSort": 0.01231,
+        "QuickSort": 0.005424,
+        "Sort C++": 0.000888,
+        "TimSort": 0.003047
+    },
+    "test/arrays/descending_174933257832.bin": {
+        "HeapSort": 0.003067,
+        "InsertionSort": 0.004044,
+        "MergeSort": 0.012301,
+        "QuickSort": 0.00538,
+        "Sort C++": 0.001119,
+        "TimSort": 0.002926
+    },
+    "test/arrays/descending_174933257833.bin": {
+        "HeapSort": 0.002968,
+        "InsertionSort": 0.003886,
+        "MergeSort": 0.012008,
+        "QuickSort": 0.005145,
+        "Sort C++": 0.000915,
+        "TimSort": 0.002829
+    },
+    "test/arrays/descending_174933257834.bin": {
+        "HeapSort": 0.003355,
+        "InsertionSort": 0.004301,
+        "MergeSort": 0.013257,
+        "QuickSort": 0.005629,
+        "Sort C++": 0.001086,
+        "TimSort": 0.003209
+    },
+    "test/arrays/descending_174933257835.bin": {
+        "HeapSort": 0.005114,
+        "InsertionSort": 0.004343,
+        "MergeSort": 0.013521,
+        "QuickSort": 0.005903,
+        "Sort C++": 0.000968,
+        "TimSort": 0.003358
+    },
+    "test/arrays/descending_174933257836.bin": {
+        "HeapSort": 0.00301,
+        "InsertionSort": 0.003861,
+        "MergeSort": 0.012049,
+        "QuickSort": 0.005459,
+        "Sort C++": 0.000882,
+        "TimSort": 0.002829
+    },
+    "test/arrays/descending_174933257837.bin": {
+        "HeapSort": 0.002985,
+        "InsertionSort": 0.003838,
+        "MergeSort": 0.012037,
+        "QuickSort": 0.005298,
+        "Sort C++": 0.000867,
+        "TimSort": 0.002819
+    },
+    "test/arrays/descending_174933257838.bin": {
+        "HeapSort": 0.003339,
+        "InsertionSort": 0.004341,
+        "MergeSort": 0.013354,
+        "QuickSort": 0.005703,
+        "Sort C++": 0.001048,
+        "TimSort": 0.003152
+    },
+    "test/arrays/descending_174933257839.bin": {
+        "HeapSort": 0.00271,
+        "InsertionSort": 0.003583,
+        "MergeSort": 0.010999,
+        "QuickSort": 0.00533,
+        "Sort C++": 0.000833,
+        "TimSort": 0.002667
+    },
+    "test/arrays/descending_17493325784.bin": {
+        "HeapSort": 0.002626,
+        "InsertionSort": 0.002615,
+        "MergeSort": 0.007915,
+        "QuickSort": 0.003446,
+        "Sort C++": 0.000573,
+        "TimSort": 0.001903
+    },
+    "test/arrays/descending_174933257840.bin": {
+        "HeapSort": 0.002747,
+        "InsertionSort": 0.003592,
+        "MergeSort": 0.011556,
+        "QuickSort": 0.005189,
+        "Sort C++": 0.001522,
+        "TimSort": 0.002924
+    },
+    "test/arrays/descending_174933257841.bin": {
+        "HeapSort": 0.002774,
+        "InsertionSort": 0.003612,
+        "MergeSort": 0.011063,
+        "QuickSort": 0.004872,
+        "Sort C++": 0.000884,
+        "TimSort": 0.002759
+    },
+    "test/arrays/descending_174933257842.bin": {
+        "HeapSort": 0.002905,
+        "InsertionSort": 0.003721,
+        "MergeSort": 0.011461,
+        "QuickSort": 0.004961,
+        "Sort C++": 0.000832,
+        "TimSort": 0.002732
+    },
+    "test/arrays/descending_174933257843.bin": {
+        "HeapSort": 0.002715,
+        "InsertionSort": 0.00359,
+        "MergeSort": 0.011043,
+        "QuickSort": 0.005041,
+        "Sort C++": 0.000846,
+        "TimSort": 0.002751
+    },
+    "test/arrays/descending_174933257844.bin": {
+        "HeapSort": 0.002842,
+        "InsertionSort": 0.003556,
+        "MergeSort": 0.011057,
+        "QuickSort": 0.005083,
+        "Sort C++": 0.000912,
+        "TimSort": 0.003251
+    },
+    "test/arrays/descending_174933257845.bin": {
+        "HeapSort": 0.008105,
+        "InsertionSort": 0.003974,
+        "MergeSort": 0.012381,
+        "QuickSort": 0.005447,
+        "Sort C++": 0.000987,
+        "TimSort": 0.003187
+    },
+    "test/arrays/descending_174933257846.bin": {
+        "HeapSort": 0.003317,
+        "InsertionSort": 0.00433,
+        "MergeSort": 0.013351,
+        "QuickSort": 0.006244,
+        "Sort C++": 0.000973,
+        "TimSort": 0.00328
+    },
+    "test/arrays/descending_174933257847.bin": {
+        "HeapSort": 0.0028769999999999998,
+        "InsertionSort": 0.003678,
+        "MergeSort": 0.011617,
+        "QuickSort": 0.005088,
+        "Sort C++": 0.000846,
+        "TimSort": 0.002723
+    },
+    "test/arrays/descending_174933257848.bin": {
+        "HeapSort": 0.003621,
+        "InsertionSort": 0.004826,
+        "MergeSort": 0.014681,
+        "QuickSort": 0.006378,
+        "Sort C++": 0.001349,
+        "TimSort": 0.003611
+    },
+    "test/arrays/descending_174933257849.bin": {
+        "HeapSort": 0.002731,
+        "InsertionSort": 0.003575,
+        "MergeSort": 0.011062,
+        "QuickSort": 0.005651,
+        "Sort C++": 0.000869,
+        "TimSort": 0.007833
+    },
+    "test/arrays/descending_17493325785.bin": {
+        "HeapSort": 0.002867,
+        "InsertionSort": 0.003724,
+        "MergeSort": 0.011443,
+        "QuickSort": 0.005133,
+        "Sort C++": 0.000887,
+        "TimSort": 0.0028
+    },
+    "test/arrays/descending_174933257850.bin": {
+        "HeapSort": 0.003188,
+        "InsertionSort": 0.004184,
+        "MergeSort": 0.013358,
+        "QuickSort": 0.006109,
+        "Sort C++": 0.000988,
+        "TimSort": 0.003208
+    },
+    "test/arrays/descending_174933257851.bin": {
+        "HeapSort": 0.003186,
+        "InsertionSort": 0.004186,
+        "MergeSort": 0.012827,
+        "QuickSort": 0.005765,
+        "Sort C++": 0.000966,
+        "TimSort": 0.003253
+    },
+    "test/arrays/descending_174933257852.bin": {
+        "HeapSort": 0.003418,
+        "InsertionSort": 0.004597,
+        "MergeSort": 0.014438,
+        "QuickSort": 0.006287,
+        "Sort C++": 0.001182,
+        "TimSort": 0.003393
+    },
+    "test/arrays/descending_174933257853.bin": {
+        "HeapSort": 0.002949,
+        "InsertionSort": 0.003841,
+        "MergeSort": 0.011917,
+        "QuickSort": 0.005261,
+        "Sort C++": 0.000894,
+        "TimSort": 0.002938
+    },
+    "test/arrays/descending_174933257854.bin": {
+        "HeapSort": 0.003095,
+        "InsertionSort": 0.003978,
+        "MergeSort": 0.012301,
+        "QuickSort": 0.005616,
+        "Sort C++": 0.000958,
+        "TimSort": 0.002963
+    },
+    "test/arrays/descending_174933257855.bin": {
+        "HeapSort": 0.003136,
+        "InsertionSort": 0.004171,
+        "MergeSort": 0.012816,
+        "QuickSort": 0.005532,
+        "Sort C++": 0.000999,
+        "TimSort": 0.003129
+    },
+    "test/arrays/descending_174933257856.bin": {
+        "HeapSort": 0.003179,
+        "InsertionSort": 0.004153,
+        "MergeSort": 0.01265,
+        "QuickSort": 0.005885,
+        "Sort C++": 0.00105,
+        "TimSort": 0.003121
+    },
+    "test/arrays/descending_174933257857.bin": {
+        "HeapSort": 0.0028769999999999998,
+        "InsertionSort": 0.00371,
+        "MergeSort": 0.011406,
+        "QuickSort": 0.005183,
+        "Sort C++": 0.000865,
+        "TimSort": 0.002828
+    },
+    "test/arrays/descending_174933257858.bin": {
+        "HeapSort": 0.003387,
+        "InsertionSort": 0.004333,
+        "MergeSort": 0.013324,
+        "QuickSort": 0.005944,
+        "Sort C++": 0.001014,
+        "TimSort": 0.003251
+    },
+    "test/arrays/descending_174933257859.bin": {
+        "HeapSort": 0.003273,
+        "InsertionSort": 0.004313,
+        "MergeSort": 0.013378,
+        "QuickSort": 0.005853,
+        "Sort C++": 0.001031,
+        "TimSort": 0.00321
+    },
+    "test/arrays/descending_17493325786.bin": {
+        "HeapSort": 0.002997,
+        "InsertionSort": 0.003838,
+        "MergeSort": 0.011941,
+        "QuickSort": 0.005081,
+        "Sort C++": 0.000855,
+        "TimSort": 0.002834
+    },
+    "test/arrays/descending_174933257860.bin": {
+        "HeapSort": 0.003368,
+        "InsertionSort": 0.004345,
+        "MergeSort": 0.021705,
+        "QuickSort": 0.007555,
+        "Sort C++": 0.001029,
+        "TimSort": 0.003644
+    },
+    "test/arrays/descending_174933257861.bin": {
+        "HeapSort": 0.003496,
+        "InsertionSort": 0.004719,
+        "MergeSort": 0.014081,
+        "QuickSort": 0.00624,
+        "Sort C++": 0.001036,
+        "TimSort": 0.003455
+    },
+    "test/arrays/descending_174933257862.bin": {
+        "HeapSort": 0.00298,
+        "InsertionSort": 0.003864,
+        "MergeSort": 0.011914,
+        "QuickSort": 0.005153,
+        "Sort C++": 0.000918,
+        "TimSort": 0.002967
+    },
+    "test/arrays/descending_174933257863.bin": {
+        "HeapSort": 0.002859,
+        "InsertionSort": 0.003586,
+        "MergeSort": 0.011191,
+        "QuickSort": 0.00516,
+        "Sort C++": 0.000857,
+        "TimSort": 0.002917
+    },
+    "test/arrays/descending_174933257864.bin": {
+        "HeapSort": 0.003231,
+        "InsertionSort": 0.004122,
+        "MergeSort": 0.012969,
+        "QuickSort": 0.005601,
+        "Sort C++": 0.001016,
+        "TimSort": 0.003081
+    },
+    "test/arrays/descending_174933257865.bin": {
+        "HeapSort": 0.003666,
+        "InsertionSort": 0.004735,
+        "MergeSort": 0.014489,
+        "QuickSort": 0.006217,
+        "Sort C++": 0.00107,
+        "TimSort": 0.003488
+    },
+    "test/arrays/descending_174933257866.bin": {
+        "HeapSort": 0.003324,
+        "InsertionSort": 0.00437,
+        "MergeSort": 0.01329,
+        "QuickSort": 0.005774,
+        "Sort C++": 0.000991,
+        "TimSort": 0.003233
+    },
+    "test/arrays/descending_174933257867.bin": {
+        "HeapSort": 0.003355,
+        "InsertionSort": 0.004312,
+        "MergeSort": 0.013297,
+        "QuickSort": 0.005749,
+        "Sort C++": 0.000996,
+        "TimSort": 0.003201
+    },
+    "test/arrays/descending_174933257868.bin": {
+        "HeapSort": 0.003611,
+        "InsertionSort": 0.004715,
+        "MergeSort": 0.008057,
+        "QuickSort": 0.004131,
+        "Sort C++": 0.000826,
+        "TimSort": 0.002142
+    },
+    "test/arrays/descending_174933257869.bin": {
+        "HeapSort": 0.002889,
+        "InsertionSort": 0.003747,
+        "MergeSort": 0.011466,
+        "QuickSort": 0.005091,
+        "Sort C++": 0.000897,
+        "TimSort": 0.0028
+    },
+    "test/arrays/descending_17493325787.bin": {
+        "HeapSort": 0.002883,
+        "InsertionSort": 0.003715,
+        "MergeSort": 0.011609,
+        "QuickSort": 0.005171,
+        "Sort C++": 0.000815,
+        "TimSort": 0.002836
+    },
+    "test/arrays/descending_174933257870.bin": {
+        "HeapSort": 0.003052,
+        "InsertionSort": 0.004021,
+        "MergeSort": 0.012301,
+        "QuickSort": 0.005297,
+        "Sort C++": 0.000916,
+        "TimSort": 0.003028
+    },
+    "test/arrays/descending_174933257871.bin": {
+        "HeapSort": 0.002981,
+        "InsertionSort": 0.003708,
+        "MergeSort": 0.011407,
+        "QuickSort": 0.005011,
+        "Sort C++": 0.000909,
+        "TimSort": 0.002836
+    },
+    "test/arrays/descending_174933257872.bin": {
+        "HeapSort": 0.002969,
+        "InsertionSort": 0.003867,
+        "MergeSort": 0.012174,
+        "QuickSort": 0.005288,
+        "Sort C++": 0.000933,
+        "TimSort": 0.002889
+    },
+    "test/arrays/descending_174933257873.bin": {
+        "HeapSort": 0.002911,
+        "InsertionSort": 0.003843,
+        "MergeSort": 0.011838,
+        "QuickSort": 0.005417,
+        "Sort C++": 0.000875,
+        "TimSort": 0.002904
+    },
+    "test/arrays/descending_174933257874.bin": {
+        "HeapSort": 0.00272,
+        "InsertionSort": 0.003573,
+        "MergeSort": 0.011197,
+        "QuickSort": 0.005104,
+        "Sort C++": 0.000834,
+        "TimSort": 0.002666
+    },
+    "test/arrays/descending_174933257875.bin": {
+        "HeapSort": 0.003016,
+        "InsertionSort": 0.003829,
+        "MergeSort": 0.011918,
+        "QuickSort": 0.005266,
+        "Sort C++": 0.000915,
+        "TimSort": 0.002817
+    },
+    "test/arrays/descending_174933257876.bin": {
+        "HeapSort": 0.003085,
+        "InsertionSort": 0.003995,
+        "MergeSort": 0.012323,
+        "QuickSort": 0.005398,
+        "Sort C++": 0.000917,
+        "TimSort": 0.002956
+    },
+    "test/arrays/descending_174933257877.bin": {
+        "HeapSort": 0.002807,
+        "InsertionSort": 0.00362,
+        "MergeSort": 0.011019,
+        "QuickSort": 0.005317,
+        "Sort C++": 0.000829,
+        "TimSort": 0.002657
+    },
+    "test/arrays/descending_174933257878.bin": {
+        "HeapSort": 0.003275,
+        "InsertionSort": 0.005088,
+        "MergeSort": 0.015776,
+        "QuickSort": 0.006049,
+        "Sort C++": 0.001105,
+        "TimSort": 0.003521
+    },
+    "test/arrays/descending_174933257879.bin": {
+        "HeapSort": 0.003604,
+        "InsertionSort": 0.004732,
+        "MergeSort": 0.014781,
+        "QuickSort": 0.006149,
+        "Sort C++": 0.001137,
+        "TimSort": 0.003442
+    },
+    "test/arrays/descending_17493325788.bin": {
+        "HeapSort": 0.013033,
+        "InsertionSort": 0.005022,
+        "MergeSort": 0.013382,
+        "QuickSort": 0.008854,
+        "Sort C++": 0.001712,
+        "TimSort": 0.00523
+    },
+    "test/arrays/descending_174933257880.bin": {
+        "HeapSort": 0.003064,
+        "InsertionSort": 0.003577,
+        "MergeSort": 0.011126,
+        "QuickSort": 0.005324,
+        "Sort C++": 0.000927,
+        "TimSort": 0.002648
+    },
+    "test/arrays/descending_174933257881.bin": {
+        "HeapSort": 0.00318,
+        "InsertionSort": 0.004137,
+        "MergeSort": 0.012674,
+        "QuickSort": 0.005655,
+        "Sort C++": 0.000916,
+        "TimSort": 0.003129
+    },
+    "test/arrays/descending_174933257882.bin": {
+        "HeapSort": 0.002831,
+        "InsertionSort": 0.003684,
+        "MergeSort": 0.011531,
+        "QuickSort": 0.005083,
+        "Sort C++": 0.000965,
+        "TimSort": 0.002729
+    },
+    "test/arrays/descending_174933257883.bin": {
+        "HeapSort": 0.002943,
+        "InsertionSort": 0.00387,
+        "MergeSort": 0.011905,
+        "QuickSort": 0.005188,
+        "Sort C++": 0.000924,
+        "TimSort": 0.00299
+    },
+    "test/arrays/descending_174933257884.bin": {
+        "HeapSort": 0.002699,
+        "InsertionSort": 0.003607,
+        "MergeSort": 0.011136,
+        "QuickSort": 0.00499,
+        "Sort C++": 0.000817,
+        "TimSort": 0.002752
+    },
+    "test/arrays/descending_174933257885.bin": {
+        "HeapSort": 0.002707,
+        "InsertionSort": 0.003588,
+        "MergeSort": 0.011107,
+        "QuickSort": 0.004968,
+        "Sort C++": 0.000822,
+        "TimSort": 0.002645
+    },
+    "test/arrays/descending_174933257886.bin": {
+        "HeapSort": 0.003196,
+        "InsertionSort": 0.004175,
+        "MergeSort": 0.012825,
+        "QuickSort": 0.005733,
+        "Sort C++": 0.000952,
+        "TimSort": 0.003123
+    },
+    "test/arrays/descending_174933257887.bin": {
+        "HeapSort": 0.0035,
+        "InsertionSort": 0.004656,
+        "MergeSort": 0.013855,
+        "QuickSort": 0.006567,
+        "Sort C++": 0.001094,
+        "TimSort": 0.003496
+    },
+    "test/arrays/descending_174933257888.bin": {
+        "HeapSort": 0.005108,
+        "InsertionSort": 0.00415,
+        "MergeSort": 0.012588,
+        "QuickSort": 0.006188,
+        "Sort C++": 0.000958,
+        "TimSort": 0.003317
+    },
+    "test/arrays/descending_174933257889.bin": {
+        "HeapSort": 0.003065,
+        "InsertionSort": 0.004024,
+        "MergeSort": 0.012261,
+        "QuickSort": 0.005463,
+        "Sort C++": 0.000918,
+        "TimSort": 0.003057
+    },
+    "test/arrays/descending_17493325789.bin": {
+        "HeapSort": 0.003131,
+        "InsertionSort": 0.003997,
+        "MergeSort": 0.012263,
+        "QuickSort": 0.005371,
+        "Sort C++": 0.000957,
+        "TimSort": 0.002999
+    },
+    "test/arrays/descending_174933257890.bin": {
+        "HeapSort": 0.002971,
+        "InsertionSort": 0.003996,
+        "MergeSort": 0.012342,
+        "QuickSort": 0.005419,
+        "Sort C++": 0.000919,
+        "TimSort": 0.003049
+    },
+    "test/arrays/descending_174933257891.bin": {
+        "HeapSort": 0.002708,
+        "InsertionSort": 0.0036,
+        "MergeSort": 0.011143,
+        "QuickSort": 0.005122,
+        "Sort C++": 0.00084,
+        "TimSort": 0.00274
+    },
+    "test/arrays/descending_174933257892.bin": {
+        "HeapSort": 0.003047,
+        "InsertionSort": 0.003952,
+        "MergeSort": 0.012291,
+        "QuickSort": 0.005398,
+        "Sort C++": 0.000897,
+        "TimSort": 0.003077
+    },
+    "test/arrays/descending_174933257893.bin": {
+        "HeapSort": 0.003305,
+        "InsertionSort": 0.004304,
+        "MergeSort": 0.013309,
+        "QuickSort": 0.005834,
+        "Sort C++": 0.000978,
+        "TimSort": 0.003391
+    },
+    "test/arrays/descending_174933257894.bin": {
+        "HeapSort": 0.00289,
+        "InsertionSort": 0.003837,
+        "MergeSort": 0.012484,
+        "QuickSort": 0.005096,
+        "Sort C++": 0.00088,
+        "TimSort": 0.002864
+    },
+    "test/arrays/descending_174933257895.bin": {
+        "HeapSort": 0.003013,
+        "InsertionSort": 0.003661,
+        "MergeSort": 0.011421,
+        "QuickSort": 0.005085,
+        "Sort C++": 0.000929,
+        "TimSort": 0.002729
+    },
+    "test/arrays/descending_174933257896.bin": {
+        "HeapSort": 0.002898,
+        "InsertionSort": 0.003732,
+        "MergeSort": 0.011813,
+        "QuickSort": 0.005286,
+        "Sort C++": 0.000809,
+        "TimSort": 0.002722
+    },
+    "test/arrays/descending_174933257897.bin": {
+        "HeapSort": 0.003304,
+        "InsertionSort": 0.004321,
+        "MergeSort": 0.013259,
+        "QuickSort": 0.00575,
+        "Sort C++": 0.000967,
+        "TimSort": 0.004367
+    },
+    "test/arrays/descending_174933257898.bin": {
+        "HeapSort": 0.003365,
+        "InsertionSort": 0.004366,
+        "MergeSort": 0.013399,
+        "QuickSort": 0.005891,
+        "Sort C++": 0.001003,
+        "TimSort": 0.003198
+    },
+    "test/arrays/descending_174933257899.bin": {
+        "HeapSort": 0.003308,
+        "InsertionSort": 0.004347,
+        "MergeSort": 0.013499,
+        "QuickSort": 0.006049,
+        "Sort C++": 0.000958,
+        "TimSort": 0.00321
+    }
+}

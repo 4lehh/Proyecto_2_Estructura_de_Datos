@@ -4,3 +4,4 @@
 #include "../include/insertionSort.hpp"
 #include "../include/mergeSort.hpp"
 #include "../include/quickSort.hpp"
+#include "../include/timSort.hpp"
