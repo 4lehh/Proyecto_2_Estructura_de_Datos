@@ -1,0 +1,802 @@
+{
+    "test/arrays/random_17493298710.bin": {
+        "HeapSort": 0.222178,
+        "InsertionSort": 0.314101,
+        "MergeSort": 0.280674,
+        "QuickSort": 0.188936,
+        "Sort C++": 0.144269,
+        "TimSort": 0.156753
+    },
+    "test/arrays/random_17493298711.bin": {
+        "HeapSort": 0.221685,
+        "InsertionSort": 0.31285,
+        "MergeSort": 0.278353,
+        "QuickSort": 0.184433,
+        "Sort C++": 0.137201,
+        "TimSort": 0.157459
+    },
+    "test/arrays/random_174932987110.bin": {
+        "HeapSort": 0.222778,
+        "InsertionSort": 0.30158,
+        "MergeSort": 0.276754,
+        "QuickSort": 0.188226,
+        "Sort C++": 0.139675,
+        "TimSort": 0.156653
+    },
+    "test/arrays/random_174932987111.bin": {
+        "HeapSort": 0.229644,
+        "InsertionSort": 0.299598,
+        "MergeSort": 0.284491,
+        "QuickSort": 0.190273,
+        "Sort C++": 0.134447,
+        "TimSort": 0.156909
+    },
+    "test/arrays/random_174932987112.bin": {
+        "HeapSort": 0.233054,
+        "InsertionSort": 0.302586,
+        "MergeSort": 0.280747,
+        "QuickSort": 0.187626,
+        "Sort C++": 0.1364,
+        "TimSort": 0.166891
+    },
+    "test/arrays/random_174932987113.bin": {
+        "HeapSort": 0.237247,
+        "InsertionSort": 0.302504,
+        "MergeSort": 0.293196,
+        "QuickSort": 0.196802,
+        "Sort C++": 0.137502,
+        "TimSort": 0.169232
+    },
+    "test/arrays/random_174932987114.bin": {
+        "HeapSort": 0.224902,
+        "InsertionSort": 0.305347,
+        "MergeSort": 0.279759,
+        "QuickSort": 0.184443,
+        "Sort C++": 0.13716,
+        "TimSort": 0.157982
+    },
+    "test/arrays/random_174932987115.bin": {
+        "HeapSort": 0.230328,
+        "InsertionSort": 0.327544,
+        "MergeSort": 0.27721,
+        "QuickSort": 0.185967,
+        "Sort C++": 0.136227,
+        "TimSort": 0.157238
+    },
+    "test/arrays/random_174932987116.bin": {
+        "HeapSort": 0.226468,
+        "InsertionSort": 0.298886,
+        "MergeSort": 0.279456,
+        "QuickSort": 0.182366,
+        "Sort C++": 0.133538,
+        "TimSort": 0.171483
+    },
+    "test/arrays/random_174932987117.bin": {
+        "HeapSort": 0.225635,
+        "InsertionSort": 0.309747,
+        "MergeSort": 0.276617,
+        "QuickSort": 0.190305,
+        "Sort C++": 0.139746,
+        "TimSort": 0.158017
+    },
+    "test/arrays/random_174932987118.bin": {
+        "HeapSort": 0.222344,
+        "InsertionSort": 0.302145,
+        "MergeSort": 0.294649,
+        "QuickSort": 0.190586,
+        "Sort C++": 0.143501,
+        "TimSort": 0.163882
+    },
+    "test/arrays/random_174932987119.bin": {
+        "HeapSort": 0.220052,
+        "InsertionSort": 0.304513,
+        "MergeSort": 0.291649,
+        "QuickSort": 0.183009,
+        "Sort C++": 0.150444,
+        "TimSort": 0.157424
+    },
+    "test/arrays/random_17493298712.bin": {
+        "HeapSort": 0.23037,
+        "InsertionSort": 0.302718,
+        "MergeSort": 0.282548,
+        "QuickSort": 0.186503,
+        "Sort C++": 0.143935,
+        "TimSort": 0.165495
+    },
+    "test/arrays/random_174932987120.bin": {
+        "HeapSort": 0.236542,
+        "InsertionSort": 0.303209,
+        "MergeSort": 0.275605,
+        "QuickSort": 0.187188,
+        "Sort C++": 0.141381,
+        "TimSort": 0.166854
+    },
+    "test/arrays/random_174932987121.bin": {
+        "HeapSort": 0.225727,
+        "InsertionSort": 0.313867,
+        "MergeSort": 0.290376,
+        "QuickSort": 0.191076,
+        "Sort C++": 0.139253,
+        "TimSort": 0.159241
+    },
+    "test/arrays/random_174932987122.bin": {
+        "HeapSort": 0.220982,
+        "InsertionSort": 0.299287,
+        "MergeSort": 0.279463,
+        "QuickSort": 0.187493,
+        "Sort C++": 0.139057,
+        "TimSort": 0.162635
+    },
+    "test/arrays/random_174932987123.bin": {
+        "HeapSort": 0.69023,
+        "InsertionSort": 0.570244,
+        "MergeSort": 0.566582,
+        "QuickSort": 0.352459,
+        "Sort C++": 0.300578,
+        "TimSort": 0.334732
+    },
+    "test/arrays/random_174932987124.bin": {
+        "HeapSort": 0.227435,
+        "InsertionSort": 0.307075,
+        "MergeSort": 0.273485,
+        "QuickSort": 0.186578,
+        "Sort C++": 0.138361,
+        "TimSort": 0.157515
+    },
+    "test/arrays/random_174932987125.bin": {
+        "HeapSort": 0.224538,
+        "InsertionSort": 0.300802,
+        "MergeSort": 0.279517,
+        "QuickSort": 0.186362,
+        "Sort C++": 0.139065,
+        "TimSort": 0.156186
+    },
+    "test/arrays/random_174932987126.bin": {
+        "HeapSort": 0.236634,
+        "InsertionSort": 0.320046,
+        "MergeSort": 0.284386,
+        "QuickSort": 0.18237,
+        "Sort C++": 0.138402,
+        "TimSort": 0.155861
+    },
+    "test/arrays/random_174932987127.bin": {
+        "HeapSort": 0.227453,
+        "InsertionSort": 0.316957,
+        "MergeSort": 0.274808,
+        "QuickSort": 0.194706,
+        "Sort C++": 0.139807,
+        "TimSort": 0.157054
+    },
+    "test/arrays/random_174932987128.bin": {
+        "HeapSort": 0.229305,
+        "InsertionSort": 0.307971,
+        "MergeSort": 0.280841,
+        "QuickSort": 0.181719,
+        "Sort C++": 0.137221,
+        "TimSort": 0.158652
+    },
+    "test/arrays/random_174932987129.bin": {
+        "HeapSort": 0.220143,
+        "InsertionSort": 0.299754,
+        "MergeSort": 0.278004,
+        "QuickSort": 0.186023,
+        "Sort C++": 0.134168,
+        "TimSort": 0.156039
+    },
+    "test/arrays/random_17493298713.bin": {
+        "HeapSort": 0.227495,
+        "InsertionSort": 0.303025,
+        "MergeSort": 0.279977,
+        "QuickSort": 0.190754,
+        "Sort C++": 0.13896,
+        "TimSort": 0.157707
+    },
+    "test/arrays/random_174932987130.bin": {
+        "HeapSort": 0.224775,
+        "InsertionSort": 0.31245,
+        "MergeSort": 0.278504,
+        "QuickSort": 0.186736,
+        "Sort C++": 0.134081,
+        "TimSort": 0.157118
+    },
+    "test/arrays/random_174932987131.bin": {
+        "HeapSort": 0.221214,
+        "InsertionSort": 0.306214,
+        "MergeSort": 0.27825,
+        "QuickSort": 0.185265,
+        "Sort C++": 0.137786,
+        "TimSort": 0.157886
+    },
+    "test/arrays/random_174932987132.bin": {
+        "HeapSort": 0.226788,
+        "InsertionSort": 0.304383,
+        "MergeSort": 0.280587,
+        "QuickSort": 0.188313,
+        "Sort C++": 0.141168,
+        "TimSort": 0.159625
+    },
+    "test/arrays/random_174932987133.bin": {
+        "HeapSort": 0.221034,
+        "InsertionSort": 0.312519,
+        "MergeSort": 0.291033,
+        "QuickSort": 0.188782,
+        "Sort C++": 0.142191,
+        "TimSort": 0.156966
+    },
+    "test/arrays/random_174932987134.bin": {
+        "HeapSort": 0.226616,
+        "InsertionSort": 0.320315,
+        "MergeSort": 0.279583,
+        "QuickSort": 0.185872,
+        "Sort C++": 0.137492,
+        "TimSort": 0.163779
+    },
+    "test/arrays/random_174932987135.bin": {
+        "HeapSort": 0.293111,
+        "InsertionSort": 0.375928,
+        "MergeSort": 0.322513,
+        "QuickSort": 0.204647,
+        "Sort C++": 0.156985,
+        "TimSort": 0.167986
+    },
+    "test/arrays/random_174932987136.bin": {
+        "HeapSort": 0.227128,
+        "InsertionSort": 0.302826,
+        "MergeSort": 0.275979,
+        "QuickSort": 0.190873,
+        "Sort C++": 0.138041,
+        "TimSort": 0.163669
+    },
+    "test/arrays/random_174932987137.bin": {
+        "HeapSort": 0.416996,
+        "InsertionSort": 0.537697,
+        "MergeSort": 0.435747,
+        "QuickSort": 0.285666,
+        "Sort C++": 0.192576,
+        "TimSort": 0.222404
+    },
+    "test/arrays/random_174932987138.bin": {
+        "HeapSort": 0.229833,
+        "InsertionSort": 0.313512,
+        "MergeSort": 0.279584,
+        "QuickSort": 0.185629,
+        "Sort C++": 0.14353,
+        "TimSort": 0.163737
+    },
+    "test/arrays/random_174932987139.bin": {
+        "HeapSort": 0.231855,
+        "InsertionSort": 0.298,
+        "MergeSort": 0.278175,
+        "QuickSort": 0.189071,
+        "Sort C++": 0.136428,
+        "TimSort": 0.156698
+    },
+    "test/arrays/random_17493298714.bin": {
+        "HeapSort": 0.224217,
+        "InsertionSort": 0.307276,
+        "MergeSort": 0.27626,
+        "QuickSort": 0.184597,
+        "Sort C++": 0.140558,
+        "TimSort": 0.15971
+    },
+    "test/arrays/random_174932987140.bin": {
+        "HeapSort": 0.220851,
+        "InsertionSort": 0.297656,
+        "MergeSort": 0.282652,
+        "QuickSort": 0.186387,
+        "Sort C++": 0.141494,
+        "TimSort": 0.157545
+    },
+    "test/arrays/random_174932987141.bin": {
+        "HeapSort": 0.230144,
+        "InsertionSort": 0.31709,
+        "MergeSort": 0.277679,
+        "QuickSort": 0.186598,
+        "Sort C++": 0.140634,
+        "TimSort": 0.155855
+    },
+    "test/arrays/random_174932987142.bin": {
+        "HeapSort": 0.226123,
+        "InsertionSort": 0.316404,
+        "MergeSort": 0.291676,
+        "QuickSort": 0.188648,
+        "Sort C++": 0.138072,
+        "TimSort": 0.166704
+    },
+    "test/arrays/random_174932987143.bin": {
+        "HeapSort": 0.222152,
+        "InsertionSort": 0.315269,
+        "MergeSort": 0.287888,
+        "QuickSort": 0.185549,
+        "Sort C++": 0.138213,
+        "TimSort": 0.158234
+    },
+    "test/arrays/random_174932987144.bin": {
+        "HeapSort": 0.222854,
+        "InsertionSort": 0.302637,
+        "MergeSort": 0.29068,
+        "QuickSort": 0.190536,
+        "Sort C++": 0.140638,
+        "TimSort": 0.160129
+    },
+    "test/arrays/random_174932987145.bin": {
+        "HeapSort": 0.229364,
+        "InsertionSort": 0.300353,
+        "MergeSort": 0.280897,
+        "QuickSort": 0.189311,
+        "Sort C++": 0.140601,
+        "TimSort": 0.156576
+    },
+    "test/arrays/random_174932987146.bin": {
+        "HeapSort": 0.222894,
+        "InsertionSort": 0.300824,
+        "MergeSort": 0.277666,
+        "QuickSort": 0.185888,
+        "Sort C++": 0.13946,
+        "TimSort": 0.157567
+    },
+    "test/arrays/random_174932987147.bin": {
+        "HeapSort": 0.225311,
+        "InsertionSort": 0.313303,
+        "MergeSort": 0.272472,
+        "QuickSort": 0.182756,
+        "Sort C++": 0.145041,
+        "TimSort": 0.157749
+    },
+    "test/arrays/random_174932987148.bin": {
+        "HeapSort": 0.22154,
+        "InsertionSort": 0.303332,
+        "MergeSort": 0.285865,
+        "QuickSort": 0.190298,
+        "Sort C++": 0.136065,
+        "TimSort": 0.15658
+    },
+    "test/arrays/random_174932987149.bin": {
+        "HeapSort": 0.223314,
+        "InsertionSort": 0.302617,
+        "MergeSort": 0.285417,
+        "QuickSort": 0.184999,
+        "Sort C++": 0.135759,
+        "TimSort": 0.157173
+    },
+    "test/arrays/random_17493298715.bin": {
+        "HeapSort": 0.223847,
+        "InsertionSort": 0.298468,
+        "MergeSort": 0.280298,
+        "QuickSort": 0.1868,
+        "Sort C++": 0.137195,
+        "TimSort": 0.157103
+    },
+    "test/arrays/random_174932987150.bin": {
+        "HeapSort": 0.221032,
+        "InsertionSort": 0.304574,
+        "MergeSort": 0.276236,
+        "QuickSort": 0.182637,
+        "Sort C++": 0.14176,
+        "TimSort": 0.155675
+    },
+    "test/arrays/random_174932987151.bin": {
+        "HeapSort": 0.223094,
+        "InsertionSort": 0.305744,
+        "MergeSort": 0.281059,
+        "QuickSort": 0.187848,
+        "Sort C++": 0.14306,
+        "TimSort": 0.157479
+    },
+    "test/arrays/random_174932987152.bin": {
+        "HeapSort": 0.221403,
+        "InsertionSort": 0.310307,
+        "MergeSort": 0.285184,
+        "QuickSort": 0.187393,
+        "Sort C++": 0.140331,
+        "TimSort": 0.155788
+    },
+    "test/arrays/random_174932987153.bin": {
+        "HeapSort": 0.228647,
+        "InsertionSort": 0.310864,
+        "MergeSort": 0.278372,
+        "QuickSort": 0.189325,
+        "Sort C++": 0.142196,
+        "TimSort": 0.168696
+    },
+    "test/arrays/random_174932987154.bin": {
+        "HeapSort": 0.223314,
+        "InsertionSort": 0.322969,
+        "MergeSort": 0.276582,
+        "QuickSort": 0.187232,
+        "Sort C++": 0.137633,
+        "TimSort": 0.159562
+    },
+    "test/arrays/random_174932987155.bin": {
+        "HeapSort": 0.226741,
+        "InsertionSort": 0.325329,
+        "MergeSort": 0.281412,
+        "QuickSort": 0.190876,
+        "Sort C++": 0.143779,
+        "TimSort": 0.158867
+    },
+    "test/arrays/random_174932987156.bin": {
+        "HeapSort": 0.220031,
+        "InsertionSort": 0.299793,
+        "MergeSort": 0.285267,
+        "QuickSort": 0.183934,
+        "Sort C++": 0.136233,
+        "TimSort": 0.157376
+    },
+    "test/arrays/random_174932987157.bin": {
+        "HeapSort": 0.219156,
+        "InsertionSort": 0.30115,
+        "MergeSort": 0.280052,
+        "QuickSort": 0.183935,
+        "Sort C++": 0.134088,
+        "TimSort": 0.156308
+    },
+    "test/arrays/random_174932987158.bin": {
+        "HeapSort": 0.22882,
+        "InsertionSort": 0.303374,
+        "MergeSort": 0.275426,
+        "QuickSort": 0.186934,
+        "Sort C++": 0.146702,
+        "TimSort": 0.163731
+    },
+    "test/arrays/random_174932987159.bin": {
+        "HeapSort": 0.232312,
+        "InsertionSort": 0.304648,
+        "MergeSort": 0.275595,
+        "QuickSort": 0.183567,
+        "Sort C++": 0.141199,
+        "TimSort": 0.165792
+    },
+    "test/arrays/random_17493298716.bin": {
+        "HeapSort": 0.225357,
+        "InsertionSort": 0.300569,
+        "MergeSort": 0.2788,
+        "QuickSort": 0.184692,
+        "Sort C++": 0.136962,
+        "TimSort": 0.15988
+    },
+    "test/arrays/random_174932987160.bin": {
+        "HeapSort": 0.222351,
+        "InsertionSort": 0.30986,
+        "MergeSort": 0.28059,
+        "QuickSort": 0.197163,
+        "Sort C++": 0.148625,
+        "TimSort": 0.168974
+    },
+    "test/arrays/random_174932987161.bin": {
+        "HeapSort": 0.229713,
+        "InsertionSort": 0.299209,
+        "MergeSort": 0.278144,
+        "QuickSort": 0.19371,
+        "Sort C++": 0.138819,
+        "TimSort": 0.170331
+    },
+    "test/arrays/random_174932987162.bin": {
+        "HeapSort": 0.220866,
+        "InsertionSort": 0.29904,
+        "MergeSort": 0.275392,
+        "QuickSort": 0.188319,
+        "Sort C++": 0.136887,
+        "TimSort": 0.156599
+    },
+    "test/arrays/random_174932987163.bin": {
+        "HeapSort": 0.22954,
+        "InsertionSort": 0.298622,
+        "MergeSort": 0.281837,
+        "QuickSort": 0.18457,
+        "Sort C++": 0.140019,
+        "TimSort": 0.17543
+    },
+    "test/arrays/random_174932987164.bin": {
+        "HeapSort": 0.221986,
+        "InsertionSort": 0.310664,
+        "MergeSort": 0.279565,
+        "QuickSort": 0.193348,
+        "Sort C++": 0.145588,
+        "TimSort": 0.157011
+    },
+    "test/arrays/random_174932987165.bin": {
+        "HeapSort": 0.221009,
+        "InsertionSort": 0.304412,
+        "MergeSort": 0.286915,
+        "QuickSort": 0.185294,
+        "Sort C++": 0.139732,
+        "TimSort": 0.156891
+    },
+    "test/arrays/random_174932987166.bin": {
+        "HeapSort": 0.241702,
+        "InsertionSort": 0.310996,
+        "MergeSort": 0.280433,
+        "QuickSort": 0.193185,
+        "Sort C++": 0.139952,
+        "TimSort": 0.168053
+    },
+    "test/arrays/random_174932987167.bin": {
+        "HeapSort": 0.220901,
+        "InsertionSort": 0.321588,
+        "MergeSort": 0.275391,
+        "QuickSort": 0.18339,
+        "Sort C++": 0.144858,
+        "TimSort": 0.159137
+    },
+    "test/arrays/random_174932987168.bin": {
+        "HeapSort": 0.220379,
+        "InsertionSort": 0.301843,
+        "MergeSort": 0.283525,
+        "QuickSort": 0.182029,
+        "Sort C++": 0.139036,
+        "TimSort": 0.156565
+    },
+    "test/arrays/random_174932987169.bin": {
+        "HeapSort": 0.223328,
+        "InsertionSort": 0.313103,
+        "MergeSort": 0.282386,
+        "QuickSort": 0.188087,
+        "Sort C++": 0.140324,
+        "TimSort": 0.15665
+    },
+    "test/arrays/random_17493298717.bin": {
+        "HeapSort": 0.235181,
+        "InsertionSort": 0.307008,
+        "MergeSort": 0.281585,
+        "QuickSort": 0.185302,
+        "Sort C++": 0.133545,
+        "TimSort": 0.164015
+    },
+    "test/arrays/random_174932987170.bin": {
+        "HeapSort": 0.234519,
+        "InsertionSort": 0.311451,
+        "MergeSort": 0.27672,
+        "QuickSort": 0.184617,
+        "Sort C++": 0.136081,
+        "TimSort": 0.158218
+    },
+    "test/arrays/random_174932987171.bin": {
+        "HeapSort": 0.222466,
+        "InsertionSort": 0.304576,
+        "MergeSort": 0.280307,
+        "QuickSort": 0.195343,
+        "Sort C++": 0.136836,
+        "TimSort": 0.161209
+    },
+    "test/arrays/random_174932987172.bin": {
+        "HeapSort": 0.223564,
+        "InsertionSort": 0.304583,
+        "MergeSort": 0.274802,
+        "QuickSort": 0.183965,
+        "Sort C++": 0.14363,
+        "TimSort": 0.154721
+    },
+    "test/arrays/random_174932987173.bin": {
+        "HeapSort": 0.225415,
+        "InsertionSort": 0.301925,
+        "MergeSort": 0.279297,
+        "QuickSort": 0.184687,
+        "Sort C++": 0.136022,
+        "TimSort": 0.156866
+    },
+    "test/arrays/random_174932987174.bin": {
+        "HeapSort": 0.227484,
+        "InsertionSort": 0.304207,
+        "MergeSort": 0.282386,
+        "QuickSort": 0.186515,
+        "Sort C++": 0.141649,
+        "TimSort": 0.156457
+    },
+    "test/arrays/random_174932987175.bin": {
+        "HeapSort": 0.22511,
+        "InsertionSort": 0.311153,
+        "MergeSort": 0.284851,
+        "QuickSort": 0.195941,
+        "Sort C++": 0.135627,
+        "TimSort": 0.160432
+    },
+    "test/arrays/random_174932987176.bin": {
+        "HeapSort": 0.228293,
+        "InsertionSort": 0.306963,
+        "MergeSort": 0.284363,
+        "QuickSort": 0.182972,
+        "Sort C++": 0.138406,
+        "TimSort": 0.160122
+    },
+    "test/arrays/random_174932987177.bin": {
+        "HeapSort": 0.223303,
+        "InsertionSort": 0.307044,
+        "MergeSort": 0.27763,
+        "QuickSort": 0.185794,
+        "Sort C++": 0.138289,
+        "TimSort": 0.156202
+    },
+    "test/arrays/random_174932987178.bin": {
+        "HeapSort": 0.224352,
+        "InsertionSort": 0.300147,
+        "MergeSort": 0.280992,
+        "QuickSort": 0.187688,
+        "Sort C++": 0.139265,
+        "TimSort": 0.159861
+    },
+    "test/arrays/random_174932987179.bin": {
+        "HeapSort": 0.227368,
+        "InsertionSort": 0.322232,
+        "MergeSort": 0.28748,
+        "QuickSort": 0.186255,
+        "Sort C++": 0.135883,
+        "TimSort": 0.157671
+    },
+    "test/arrays/random_17493298718.bin": {
+        "HeapSort": 0.218637,
+        "InsertionSort": 0.303425,
+        "MergeSort": 0.279766,
+        "QuickSort": 0.183929,
+        "Sort C++": 0.143467,
+        "TimSort": 0.155791
+    },
+    "test/arrays/random_174932987180.bin": {
+        "HeapSort": 0.231057,
+        "InsertionSort": 0.320001,
+        "MergeSort": 0.281965,
+        "QuickSort": 0.186433,
+        "Sort C++": 0.138024,
+        "TimSort": 0.155297
+    },
+    "test/arrays/random_174932987181.bin": {
+        "HeapSort": 0.22195,
+        "InsertionSort": 0.300299,
+        "MergeSort": 0.280655,
+        "QuickSort": 0.189064,
+        "Sort C++": 0.141976,
+        "TimSort": 0.156289
+    },
+    "test/arrays/random_174932987182.bin": {
+        "HeapSort": 0.219682,
+        "InsertionSort": 0.303072,
+        "MergeSort": 0.27862,
+        "QuickSort": 0.190527,
+        "Sort C++": 0.138724,
+        "TimSort": 0.164684
+    },
+    "test/arrays/random_174932987183.bin": {
+        "HeapSort": 0.220025,
+        "InsertionSort": 0.298803,
+        "MergeSort": 0.294611,
+        "QuickSort": 0.18621,
+        "Sort C++": 0.135476,
+        "TimSort": 0.157178
+    },
+    "test/arrays/random_174932987184.bin": {
+        "HeapSort": 0.222058,
+        "InsertionSort": 0.30645,
+        "MergeSort": 0.279285,
+        "QuickSort": 0.18505,
+        "Sort C++": 0.142344,
+        "TimSort": 0.15623
+    },
+    "test/arrays/random_174932987185.bin": {
+        "HeapSort": 0.222688,
+        "InsertionSort": 0.308339,
+        "MergeSort": 0.279277,
+        "QuickSort": 0.183765,
+        "Sort C++": 0.135811,
+        "TimSort": 0.155236
+    },
+    "test/arrays/random_174932987186.bin": {
+        "HeapSort": 0.221028,
+        "InsertionSort": 0.302568,
+        "MergeSort": 0.278932,
+        "QuickSort": 0.185075,
+        "Sort C++": 0.140366,
+        "TimSort": 0.156862
+    },
+    "test/arrays/random_174932987187.bin": {
+        "HeapSort": 0.491485,
+        "InsertionSort": 0.664126,
+        "MergeSort": 0.632772,
+        "QuickSort": 0.388893,
+        "Sort C++": 0.269217,
+        "TimSort": 0.330243
+    },
+    "test/arrays/random_174932987188.bin": {
+        "HeapSort": 0.230164,
+        "InsertionSort": 0.304406,
+        "MergeSort": 0.277659,
+        "QuickSort": 0.18517,
+        "Sort C++": 0.138039,
+        "TimSort": 0.156883
+    },
+    "test/arrays/random_174932987189.bin": {
+        "HeapSort": 0.22622,
+        "InsertionSort": 0.304643,
+        "MergeSort": 0.278068,
+        "QuickSort": 0.185699,
+        "Sort C++": 0.136923,
+        "TimSort": 0.156931
+    },
+    "test/arrays/random_17493298719.bin": {
+        "HeapSort": 0.225856,
+        "InsertionSort": 0.311752,
+        "MergeSort": 0.288336,
+        "QuickSort": 0.187567,
+        "Sort C++": 0.141855,
+        "TimSort": 0.15944
+    },
+    "test/arrays/random_174932987190.bin": {
+        "HeapSort": 0.220494,
+        "InsertionSort": 0.29971,
+        "MergeSort": 0.27679,
+        "QuickSort": 0.193198,
+        "Sort C++": 0.14011,
+        "TimSort": 0.157252
+    },
+    "test/arrays/random_174932987191.bin": {
+        "HeapSort": 0.223703,
+        "InsertionSort": 0.314214,
+        "MergeSort": 0.292256,
+        "QuickSort": 0.188127,
+        "Sort C++": 0.136208,
+        "TimSort": 0.156577
+    },
+    "test/arrays/random_174932987192.bin": {
+        "HeapSort": 0.220821,
+        "InsertionSort": 0.31201,
+        "MergeSort": 0.283108,
+        "QuickSort": 0.184251,
+        "Sort C++": 0.141644,
+        "TimSort": 0.157493
+    },
+    "test/arrays/random_174932987193.bin": {
+        "HeapSort": 0.240703,
+        "InsertionSort": 0.308414,
+        "MergeSort": 0.277429,
+        "QuickSort": 0.188559,
+        "Sort C++": 0.135787,
+        "TimSort": 0.166962
+    },
+    "test/arrays/random_174932987194.bin": {
+        "HeapSort": 0.220691,
+        "InsertionSort": 0.312899,
+        "MergeSort": 0.286868,
+        "QuickSort": 0.188748,
+        "Sort C++": 0.139767,
+        "TimSort": 0.159431
+    },
+    "test/arrays/random_174932987195.bin": {
+        "HeapSort": 0.22238,
+        "InsertionSort": 0.318052,
+        "MergeSort": 0.281904,
+        "QuickSort": 0.185708,
+        "Sort C++": 0.137191,
+        "TimSort": 0.158163
+    },
+    "test/arrays/random_174932987196.bin": {
+        "HeapSort": 0.221744,
+        "InsertionSort": 0.31067,
+        "MergeSort": 0.282627,
+        "QuickSort": 0.186434,
+        "Sort C++": 0.142492,
+        "TimSort": 0.157734
+    },
+    "test/arrays/random_174932987197.bin": {
+        "HeapSort": 0.233094,
+        "InsertionSort": 0.305922,
+        "MergeSort": 0.280405,
+        "QuickSort": 0.185862,
+        "Sort C++": 0.138366,
+        "TimSort": 0.156112
+    },
+    "test/arrays/random_174932987198.bin": {
+        "HeapSort": 0.222776,
+        "InsertionSort": 0.325923,
+        "MergeSort": 0.284085,
+        "QuickSort": 0.185572,
+        "Sort C++": 0.13838,
+        "TimSort": 0.158824
+    },
+    "test/arrays/random_174932987199.bin": {
+        "HeapSort": 0.223776,
+        "InsertionSort": 0.318019,
+        "MergeSort": 0.293648,
+        "QuickSort": 0.186226,
+        "Sort C++": 0.139861,
+        "TimSort": 0.167562
+    }
+}

@@ -1,0 +1,802 @@
+{
+    "test/arrays/random_17493298020.bin": {
+        "HeapSort": 0.004284,
+        "InsertionSort": 0.00376,
+        "MergeSort": 0.006258,
+        "QuickSort": 0.004136,
+        "Sort C++": 0.002522,
+        "TimSort": 0.002263
+    },
+    "test/arrays/random_17493298021.bin": {
+        "HeapSort": 0.003353,
+        "InsertionSort": 0.002923,
+        "MergeSort": 0.005439,
+        "QuickSort": 0.003387,
+        "Sort C++": 0.002311,
+        "TimSort": 0.001872
+    },
+    "test/arrays/random_174932980210.bin": {
+        "HeapSort": 0.003659,
+        "InsertionSort": 0.002966,
+        "MergeSort": 0.005534,
+        "QuickSort": 0.003192,
+        "Sort C++": 0.002155,
+        "TimSort": 0.001703
+    },
+    "test/arrays/random_174932980211.bin": {
+        "HeapSort": 0.016967,
+        "InsertionSort": 0.005237,
+        "MergeSort": 0.010391,
+        "QuickSort": 0.006225,
+        "Sort C++": 0.003342,
+        "TimSort": 0.003057
+    },
+    "test/arrays/random_174932980212.bin": {
+        "HeapSort": 0.003919,
+        "InsertionSort": 0.003496,
+        "MergeSort": 0.006335,
+        "QuickSort": 0.003978,
+        "Sort C++": 0.002248,
+        "TimSort": 0.002395
+    },
+    "test/arrays/random_174932980213.bin": {
+        "HeapSort": 0.003671,
+        "InsertionSort": 0.003087,
+        "MergeSort": 0.005272,
+        "QuickSort": 0.003252,
+        "Sort C++": 0.002231,
+        "TimSort": 0.001864
+    },
+    "test/arrays/random_174932980214.bin": {
+        "HeapSort": 0.003318,
+        "InsertionSort": 0.003082,
+        "MergeSort": 0.005436,
+        "QuickSort": 0.003473,
+        "Sort C++": 0.00222,
+        "TimSort": 0.002135
+    },
+    "test/arrays/random_174932980215.bin": {
+        "HeapSort": 0.003574,
+        "InsertionSort": 0.003632,
+        "MergeSort": 0.006068,
+        "QuickSort": 0.003908,
+        "Sort C++": 0.002441,
+        "TimSort": 0.002096
+    },
+    "test/arrays/random_174932980216.bin": {
+        "HeapSort": 0.00287,
+        "InsertionSort": 0.002826,
+        "MergeSort": 0.005422,
+        "QuickSort": 0.003388,
+        "Sort C++": 0.002115,
+        "TimSort": 0.002032
+    },
+    "test/arrays/random_174932980217.bin": {
+        "HeapSort": 0.005843,
+        "InsertionSort": 0.00499,
+        "MergeSort": 0.009659,
+        "QuickSort": 0.005853,
+        "Sort C++": 0.00344,
+        "TimSort": 0.002727
+    },
+    "test/arrays/random_174932980218.bin": {
+        "HeapSort": 0.003591,
+        "InsertionSort": 0.0031,
+        "MergeSort": 0.005433,
+        "QuickSort": 0.003237,
+        "Sort C++": 0.002313,
+        "TimSort": 0.001744
+    },
+    "test/arrays/random_174932980219.bin": {
+        "HeapSort": 0.003685,
+        "InsertionSort": 0.003308,
+        "MergeSort": 0.005529,
+        "QuickSort": 0.003499,
+        "Sort C++": 0.002461,
+        "TimSort": 0.001905
+    },
+    "test/arrays/random_17493298022.bin": {
+        "HeapSort": 0.003964,
+        "InsertionSort": 0.00356,
+        "MergeSort": 0.006554,
+        "QuickSort": 0.003909,
+        "Sort C++": 0.002767,
+        "TimSort": 0.002156
+    },
+    "test/arrays/random_174932980220.bin": {
+        "HeapSort": 0.003988,
+        "InsertionSort": 0.003279,
+        "MergeSort": 0.006145,
+        "QuickSort": 0.003847,
+        "Sort C++": 0.002299,
+        "TimSort": 0.002256
+    },
+    "test/arrays/random_174932980221.bin": {
+        "HeapSort": 0.004405,
+        "InsertionSort": 0.003804,
+        "MergeSort": 0.006276,
+        "QuickSort": 0.00416,
+        "Sort C++": 0.002565,
+        "TimSort": 0.002122
+    },
+    "test/arrays/random_174932980222.bin": {
+        "HeapSort": 0.003236,
+        "InsertionSort": 0.002937,
+        "MergeSort": 0.005248,
+        "QuickSort": 0.003143,
+        "Sort C++": 0.00237,
+        "TimSort": 0.001725
+    },
+    "test/arrays/random_174932980223.bin": {
+        "HeapSort": 0.003524,
+        "InsertionSort": 0.003195,
+        "MergeSort": 0.005068,
+        "QuickSort": 0.003371,
+        "Sort C++": 0.002128,
+        "TimSort": 0.001789
+    },
+    "test/arrays/random_174932980224.bin": {
+        "HeapSort": 0.003588,
+        "InsertionSort": 0.003541,
+        "MergeSort": 0.006176,
+        "QuickSort": 0.003807,
+        "Sort C++": 0.002419,
+        "TimSort": 0.002028
+    },
+    "test/arrays/random_174932980225.bin": {
+        "HeapSort": 0.00626,
+        "InsertionSort": 0.004937,
+        "MergeSort": 0.0096,
+        "QuickSort": 0.005635,
+        "Sort C++": 0.003345,
+        "TimSort": 0.002931
+    },
+    "test/arrays/random_174932980226.bin": {
+        "HeapSort": 0.003917,
+        "InsertionSort": 0.003588,
+        "MergeSort": 0.005973,
+        "QuickSort": 0.003805,
+        "Sort C++": 0.002446,
+        "TimSort": 0.002321
+    },
+    "test/arrays/random_174932980227.bin": {
+        "HeapSort": 0.003738,
+        "InsertionSort": 0.003554,
+        "MergeSort": 0.005928,
+        "QuickSort": 0.003711,
+        "Sort C++": 0.002334,
+        "TimSort": 0.002282
+    },
+    "test/arrays/random_174932980228.bin": {
+        "HeapSort": 0.003417,
+        "InsertionSort": 0.003243,
+        "MergeSort": 0.005174,
+        "QuickSort": 0.003364,
+        "Sort C++": 0.002135,
+        "TimSort": 0.001932
+    },
+    "test/arrays/random_174932980229.bin": {
+        "HeapSort": 0.004142,
+        "InsertionSort": 0.003936,
+        "MergeSort": 0.006239,
+        "QuickSort": 0.004138,
+        "Sort C++": 0.002523,
+        "TimSort": 0.002395
+    },
+    "test/arrays/random_17493298023.bin": {
+        "HeapSort": 0.006132,
+        "InsertionSort": 0.005086,
+        "MergeSort": 0.010664,
+        "QuickSort": 0.005988,
+        "Sort C++": 0.003541,
+        "TimSort": 0.003309
+    },
+    "test/arrays/random_174932980230.bin": {
+        "HeapSort": 0.003316,
+        "InsertionSort": 0.002921,
+        "MergeSort": 0.005278,
+        "QuickSort": 0.003216,
+        "Sort C++": 0.002257,
+        "TimSort": 0.00177
+    },
+    "test/arrays/random_174932980231.bin": {
+        "HeapSort": 0.003966,
+        "InsertionSort": 0.003555,
+        "MergeSort": 0.006074,
+        "QuickSort": 0.00397,
+        "Sort C++": 0.002471,
+        "TimSort": 0.002245
+    },
+    "test/arrays/random_174932980232.bin": {
+        "HeapSort": 0.003956,
+        "InsertionSort": 0.003506,
+        "MergeSort": 0.006494,
+        "QuickSort": 0.00426,
+        "Sort C++": 0.00287,
+        "TimSort": 0.002485
+    },
+    "test/arrays/random_174932980233.bin": {
+        "HeapSort": 0.003409,
+        "InsertionSort": 0.0028769999999999998,
+        "MergeSort": 0.005351,
+        "QuickSort": 0.003393,
+        "Sort C++": 0.002207,
+        "TimSort": 0.001831
+    },
+    "test/arrays/random_174932980234.bin": {
+        "HeapSort": 0.003521,
+        "InsertionSort": 0.003199,
+        "MergeSort": 0.005635,
+        "QuickSort": 0.003699,
+        "Sort C++": 0.002448,
+        "TimSort": 0.001792
+    },
+    "test/arrays/random_174932980235.bin": {
+        "HeapSort": 0.004511,
+        "InsertionSort": 0.00384,
+        "MergeSort": 0.008391,
+        "QuickSort": 0.00422,
+        "Sort C++": 0.002741,
+        "TimSort": 0.002847
+    },
+    "test/arrays/random_174932980236.bin": {
+        "HeapSort": 0.003315,
+        "InsertionSort": 0.003006,
+        "MergeSort": 0.005284,
+        "QuickSort": 0.003086,
+        "Sort C++": 0.0023,
+        "TimSort": 0.001952
+    },
+    "test/arrays/random_174932980237.bin": {
+        "HeapSort": 0.003287,
+        "InsertionSort": 0.003008,
+        "MergeSort": 0.005121,
+        "QuickSort": 0.003367,
+        "Sort C++": 0.002188,
+        "TimSort": 0.001921
+    },
+    "test/arrays/random_174932980238.bin": {
+        "HeapSort": 0.003861,
+        "InsertionSort": 0.003438,
+        "MergeSort": 0.005999,
+        "QuickSort": 0.004089,
+        "Sort C++": 0.002839,
+        "TimSort": 0.002116
+    },
+    "test/arrays/random_174932980239.bin": {
+        "HeapSort": 0.004079,
+        "InsertionSort": 0.003613,
+        "MergeSort": 0.006526,
+        "QuickSort": 0.004128,
+        "Sort C++": 0.002543,
+        "TimSort": 0.002353
+    },
+    "test/arrays/random_17493298024.bin": {
+        "HeapSort": 0.00666,
+        "InsertionSort": 0.0057,
+        "MergeSort": 0.010676,
+        "QuickSort": 0.006517,
+        "Sort C++": 0.003405,
+        "TimSort": 0.003461
+    },
+    "test/arrays/random_174932980240.bin": {
+        "HeapSort": 0.00348,
+        "InsertionSort": 0.003121,
+        "MergeSort": 0.005386,
+        "QuickSort": 0.00348,
+        "Sort C++": 0.002014,
+        "TimSort": 0.001982
+    },
+    "test/arrays/random_174932980241.bin": {
+        "HeapSort": 0.008083,
+        "InsertionSort": 0.008027,
+        "MergeSort": 0.013394,
+        "QuickSort": 0.007019,
+        "Sort C++": 0.00419,
+        "TimSort": 0.003741
+    },
+    "test/arrays/random_174932980242.bin": {
+        "HeapSort": 0.003976,
+        "InsertionSort": 0.003953,
+        "MergeSort": 0.00647,
+        "QuickSort": 0.004032,
+        "Sort C++": 0.00271,
+        "TimSort": 0.002173
+    },
+    "test/arrays/random_174932980243.bin": {
+        "HeapSort": 0.003478,
+        "InsertionSort": 0.003149,
+        "MergeSort": 0.005344,
+        "QuickSort": 0.003273,
+        "Sort C++": 0.002296,
+        "TimSort": 0.002026
+    },
+    "test/arrays/random_174932980244.bin": {
+        "HeapSort": 0.003495,
+        "InsertionSort": 0.003246,
+        "MergeSort": 0.005567,
+        "QuickSort": 0.003408,
+        "Sort C++": 0.002387,
+        "TimSort": 0.001919
+    },
+    "test/arrays/random_174932980245.bin": {
+        "HeapSort": 0.00386,
+        "InsertionSort": 0.003466,
+        "MergeSort": 0.005989,
+        "QuickSort": 0.003918,
+        "Sort C++": 0.002617,
+        "TimSort": 0.002005
+    },
+    "test/arrays/random_174932980246.bin": {
+        "HeapSort": 0.003482,
+        "InsertionSort": 0.003105,
+        "MergeSort": 0.005659,
+        "QuickSort": 0.003494,
+        "Sort C++": 0.002257,
+        "TimSort": 0.00196
+    },
+    "test/arrays/random_174932980247.bin": {
+        "HeapSort": 0.00321,
+        "InsertionSort": 0.003037,
+        "MergeSort": 0.005183,
+        "QuickSort": 0.003127,
+        "Sort C++": 0.00216,
+        "TimSort": 0.001941
+    },
+    "test/arrays/random_174932980248.bin": {
+        "HeapSort": 0.003668,
+        "InsertionSort": 0.003388,
+        "MergeSort": 0.006014,
+        "QuickSort": 0.003848,
+        "Sort C++": 0.002551,
+        "TimSort": 0.00215
+    },
+    "test/arrays/random_174932980249.bin": {
+        "HeapSort": 0.003865,
+        "InsertionSort": 0.003535,
+        "MergeSort": 0.005989,
+        "QuickSort": 0.00378,
+        "Sort C++": 0.002498,
+        "TimSort": 0.002337
+    },
+    "test/arrays/random_17493298025.bin": {
+        "HeapSort": 0.003444,
+        "InsertionSort": 0.003291,
+        "MergeSort": 0.005535,
+        "QuickSort": 0.00331,
+        "Sort C++": 0.002086,
+        "TimSort": 0.001903
+    },
+    "test/arrays/random_174932980250.bin": {
+        "HeapSort": 0.005404,
+        "InsertionSort": 0.004468,
+        "MergeSort": 0.008414,
+        "QuickSort": 0.005219,
+        "Sort C++": 0.003009,
+        "TimSort": 0.002557
+    },
+    "test/arrays/random_174932980251.bin": {
+        "HeapSort": 0.003805,
+        "InsertionSort": 0.003604,
+        "MergeSort": 0.006086,
+        "QuickSort": 0.00365,
+        "Sort C++": 0.002626,
+        "TimSort": 0.002289
+    },
+    "test/arrays/random_174932980252.bin": {
+        "HeapSort": 0.003272,
+        "InsertionSort": 0.003276,
+        "MergeSort": 0.005276,
+        "QuickSort": 0.00312,
+        "Sort C++": 0.002335,
+        "TimSort": 0.001821
+    },
+    "test/arrays/random_174932980253.bin": {
+        "HeapSort": 0.003859,
+        "InsertionSort": 0.003727,
+        "MergeSort": 0.011341,
+        "QuickSort": 0.004029,
+        "Sort C++": 0.002469,
+        "TimSort": 0.00229
+    },
+    "test/arrays/random_174932980254.bin": {
+        "HeapSort": 0.003771,
+        "InsertionSort": 0.003335,
+        "MergeSort": 0.005452,
+        "QuickSort": 0.003512,
+        "Sort C++": 0.002097,
+        "TimSort": 0.001861
+    },
+    "test/arrays/random_174932980255.bin": {
+        "HeapSort": 0.003477,
+        "InsertionSort": 0.002882,
+        "MergeSort": 0.005623,
+        "QuickSort": 0.003359,
+        "Sort C++": 0.002185,
+        "TimSort": 0.001987
+    },
+    "test/arrays/random_174932980256.bin": {
+        "HeapSort": 0.003447,
+        "InsertionSort": 0.003028,
+        "MergeSort": 0.005491,
+        "QuickSort": 0.003546,
+        "Sort C++": 0.002155,
+        "TimSort": 0.002074
+    },
+    "test/arrays/random_174932980257.bin": {
+        "HeapSort": 0.003428,
+        "InsertionSort": 0.003018,
+        "MergeSort": 0.005599,
+        "QuickSort": 0.003262,
+        "Sort C++": 0.002042,
+        "TimSort": 0.001855
+    },
+    "test/arrays/random_174932980258.bin": {
+        "HeapSort": 0.004221,
+        "InsertionSort": 0.003524,
+        "MergeSort": 0.006084,
+        "QuickSort": 0.00393,
+        "Sort C++": 0.002617,
+        "TimSort": 0.001939
+    },
+    "test/arrays/random_174932980259.bin": {
+        "HeapSort": 0.003665,
+        "InsertionSort": 0.003262,
+        "MergeSort": 0.005846,
+        "QuickSort": 0.003527,
+        "Sort C++": 0.00236,
+        "TimSort": 0.001958
+    },
+    "test/arrays/random_17493298026.bin": {
+        "HeapSort": 0.005059,
+        "InsertionSort": 0.003954,
+        "MergeSort": 0.008457,
+        "QuickSort": 0.005086,
+        "Sort C++": 0.003119,
+        "TimSort": 0.002363
+    },
+    "test/arrays/random_174932980260.bin": {
+        "HeapSort": 0.003244,
+        "InsertionSort": 0.002895,
+        "MergeSort": 0.005309,
+        "QuickSort": 0.003076,
+        "Sort C++": 0.002418,
+        "TimSort": 0.001934
+    },
+    "test/arrays/random_174932980261.bin": {
+        "HeapSort": 0.003853,
+        "InsertionSort": 0.003665,
+        "MergeSort": 0.006277,
+        "QuickSort": 0.004028,
+        "Sort C++": 0.002657,
+        "TimSort": 0.002003
+    },
+    "test/arrays/random_174932980262.bin": {
+        "HeapSort": 0.003604,
+        "InsertionSort": 0.003092,
+        "MergeSort": 0.005541,
+        "QuickSort": 0.003326,
+        "Sort C++": 0.002353,
+        "TimSort": 0.001941
+    },
+    "test/arrays/random_174932980263.bin": {
+        "HeapSort": 0.005645,
+        "InsertionSort": 0.004354,
+        "MergeSort": 0.00898,
+        "QuickSort": 0.005322,
+        "Sort C++": 0.002939,
+        "TimSort": 0.002541
+    },
+    "test/arrays/random_174932980264.bin": {
+        "HeapSort": 0.004025,
+        "InsertionSort": 0.003467,
+        "MergeSort": 0.006312,
+        "QuickSort": 0.003925,
+        "Sort C++": 0.002951,
+        "TimSort": 0.002354
+    },
+    "test/arrays/random_174932980265.bin": {
+        "HeapSort": 0.004027,
+        "InsertionSort": 0.003481,
+        "MergeSort": 0.005857,
+        "QuickSort": 0.003883,
+        "Sort C++": 0.002681,
+        "TimSort": 0.00194
+    },
+    "test/arrays/random_174932980266.bin": {
+        "HeapSort": 0.005786,
+        "InsertionSort": 0.004714,
+        "MergeSort": 0.009055,
+        "QuickSort": 0.005254,
+        "Sort C++": 0.002966,
+        "TimSort": 0.002718
+    },
+    "test/arrays/random_174932980267.bin": {
+        "HeapSort": 0.003833,
+        "InsertionSort": 0.003494,
+        "MergeSort": 0.00589,
+        "QuickSort": 0.003803,
+        "Sort C++": 0.002305,
+        "TimSort": 0.002275
+    },
+    "test/arrays/random_174932980268.bin": {
+        "HeapSort": 0.003351,
+        "InsertionSort": 0.003547,
+        "MergeSort": 0.00574,
+        "QuickSort": 0.004201,
+        "Sort C++": 0.002219,
+        "TimSort": 0.00212
+    },
+    "test/arrays/random_174932980269.bin": {
+        "HeapSort": 0.003756,
+        "InsertionSort": 0.003741,
+        "MergeSort": 0.006122,
+        "QuickSort": 0.003987,
+        "Sort C++": 0.002564,
+        "TimSort": 0.001951
+    },
+    "test/arrays/random_17493298027.bin": {
+        "HeapSort": 0.003828,
+        "InsertionSort": 0.003376,
+        "MergeSort": 0.006022,
+        "QuickSort": 0.003998,
+        "Sort C++": 0.002334,
+        "TimSort": 0.002184
+    },
+    "test/arrays/random_174932980270.bin": {
+        "HeapSort": 0.003671,
+        "InsertionSort": 0.00322,
+        "MergeSort": 0.005765,
+        "QuickSort": 0.003535,
+        "Sort C++": 0.002388,
+        "TimSort": 0.001922
+    },
+    "test/arrays/random_174932980271.bin": {
+        "HeapSort": 0.003532,
+        "InsertionSort": 0.003044,
+        "MergeSort": 0.005382,
+        "QuickSort": 0.003538,
+        "Sort C++": 0.002076,
+        "TimSort": 0.001899
+    },
+    "test/arrays/random_174932980272.bin": {
+        "HeapSort": 0.005502,
+        "InsertionSort": 0.004495,
+        "MergeSort": 0.009272,
+        "QuickSort": 0.004806,
+        "Sort C++": 0.003287,
+        "TimSort": 0.002532
+    },
+    "test/arrays/random_174932980273.bin": {
+        "HeapSort": 0.003435,
+        "InsertionSort": 0.003052,
+        "MergeSort": 0.00541,
+        "QuickSort": 0.003437,
+        "Sort C++": 0.002452,
+        "TimSort": 0.001786
+    },
+    "test/arrays/random_174932980274.bin": {
+        "HeapSort": 0.005495,
+        "InsertionSort": 0.004817,
+        "MergeSort": 0.009977,
+        "QuickSort": 0.005653,
+        "Sort C++": 0.003618,
+        "TimSort": 0.002903
+    },
+    "test/arrays/random_174932980275.bin": {
+        "HeapSort": 0.003227,
+        "InsertionSort": 0.003118,
+        "MergeSort": 0.005516,
+        "QuickSort": 0.003497,
+        "Sort C++": 0.00226,
+        "TimSort": 0.001913
+    },
+    "test/arrays/random_174932980276.bin": {
+        "HeapSort": 0.004222,
+        "InsertionSort": 0.003689,
+        "MergeSort": 0.00645,
+        "QuickSort": 0.004205,
+        "Sort C++": 0.002702,
+        "TimSort": 0.00236
+    },
+    "test/arrays/random_174932980277.bin": {
+        "HeapSort": 0.005248,
+        "InsertionSort": 0.004124,
+        "MergeSort": 0.008339,
+        "QuickSort": 0.004973,
+        "Sort C++": 0.00289,
+        "TimSort": 0.002391
+    },
+    "test/arrays/random_174932980278.bin": {
+        "HeapSort": 0.003813,
+        "InsertionSort": 0.003842,
+        "MergeSort": 0.006339,
+        "QuickSort": 0.003974,
+        "Sort C++": 0.0026,
+        "TimSort": 0.002354
+    },
+    "test/arrays/random_174932980279.bin": {
+        "HeapSort": 0.004164,
+        "InsertionSort": 0.004004,
+        "MergeSort": 0.006408,
+        "QuickSort": 0.003841,
+        "Sort C++": 0.002555,
+        "TimSort": 0.002345
+    },
+    "test/arrays/random_17493298028.bin": {
+        "HeapSort": 0.003451,
+        "InsertionSort": 0.003159,
+        "MergeSort": 0.005557,
+        "QuickSort": 0.003708,
+        "Sort C++": 0.002489,
+        "TimSort": 0.002224
+    },
+    "test/arrays/random_174932980280.bin": {
+        "HeapSort": 0.005604,
+        "InsertionSort": 0.004703,
+        "MergeSort": 0.009673,
+        "QuickSort": 0.005708,
+        "Sort C++": 0.003332,
+        "TimSort": 0.002955
+    },
+    "test/arrays/random_174932980281.bin": {
+        "HeapSort": 0.005457,
+        "InsertionSort": 0.004532,
+        "MergeSort": 0.009258,
+        "QuickSort": 0.005271,
+        "Sort C++": 0.003134,
+        "TimSort": 0.002685
+    },
+    "test/arrays/random_174932980282.bin": {
+        "HeapSort": 0.003966,
+        "InsertionSort": 0.00367,
+        "MergeSort": 0.00631,
+        "QuickSort": 0.004017,
+        "Sort C++": 0.002639,
+        "TimSort": 0.00232
+    },
+    "test/arrays/random_174932980283.bin": {
+        "HeapSort": 0.004156,
+        "InsertionSort": 0.003873,
+        "MergeSort": 0.006385,
+        "QuickSort": 0.004104,
+        "Sort C++": 0.002651,
+        "TimSort": 0.002146
+    },
+    "test/arrays/random_174932980284.bin": {
+        "HeapSort": 0.003926,
+        "InsertionSort": 0.003547,
+        "MergeSort": 0.006148,
+        "QuickSort": 0.0039,
+        "Sort C++": 0.002498,
+        "TimSort": 0.002145
+    },
+    "test/arrays/random_174932980285.bin": {
+        "HeapSort": 0.003467,
+        "InsertionSort": 0.0033,
+        "MergeSort": 0.005629,
+        "QuickSort": 0.003554,
+        "Sort C++": 0.002393,
+        "TimSort": 0.001883
+    },
+    "test/arrays/random_174932980286.bin": {
+        "HeapSort": 0.00333,
+        "InsertionSort": 0.003156,
+        "MergeSort": 0.005514,
+        "QuickSort": 0.003339,
+        "Sort C++": 0.002196,
+        "TimSort": 0.002029
+    },
+    "test/arrays/random_174932980287.bin": {
+        "HeapSort": 0.003622,
+        "InsertionSort": 0.003054,
+        "MergeSort": 0.005665,
+        "QuickSort": 0.00365,
+        "Sort C++": 0.002397,
+        "TimSort": 0.002145
+    },
+    "test/arrays/random_174932980288.bin": {
+        "HeapSort": 0.00393,
+        "InsertionSort": 0.003611,
+        "MergeSort": 0.006544,
+        "QuickSort": 0.003836,
+        "Sort C++": 0.00257,
+        "TimSort": 0.002376
+    },
+    "test/arrays/random_174932980289.bin": {
+        "HeapSort": 0.003515,
+        "InsertionSort": 0.003141,
+        "MergeSort": 0.005466,
+        "QuickSort": 0.003395,
+        "Sort C++": 0.002234,
+        "TimSort": 0.002062
+    },
+    "test/arrays/random_17493298029.bin": {
+        "HeapSort": 0.003458,
+        "InsertionSort": 0.00316,
+        "MergeSort": 0.005367,
+        "QuickSort": 0.003261,
+        "Sort C++": 0.002309,
+        "TimSort": 0.002012
+    },
+    "test/arrays/random_174932980290.bin": {
+        "HeapSort": 0.003696,
+        "InsertionSort": 0.003137,
+        "MergeSort": 0.005714,
+        "QuickSort": 0.003719,
+        "Sort C++": 0.002377,
+        "TimSort": 0.001903
+    },
+    "test/arrays/random_174932980291.bin": {
+        "HeapSort": 0.003792,
+        "InsertionSort": 0.003449,
+        "MergeSort": 0.006013,
+        "QuickSort": 0.003532,
+        "Sort C++": 0.002744,
+        "TimSort": 0.002341
+    },
+    "test/arrays/random_174932980292.bin": {
+        "HeapSort": 0.005224,
+        "InsertionSort": 0.004547,
+        "MergeSort": 0.009074,
+        "QuickSort": 0.005134,
+        "Sort C++": 0.003131,
+        "TimSort": 0.002678
+    },
+    "test/arrays/random_174932980293.bin": {
+        "HeapSort": 0.007098,
+        "InsertionSort": 0.005578,
+        "MergeSort": 0.011927,
+        "QuickSort": 0.007066,
+        "Sort C++": 0.003701,
+        "TimSort": 0.003533
+    },
+    "test/arrays/random_174932980294.bin": {
+        "HeapSort": 0.003351,
+        "InsertionSort": 0.003254,
+        "MergeSort": 0.005744,
+        "QuickSort": 0.003539,
+        "Sort C++": 0.00225,
+        "TimSort": 0.00207
+    },
+    "test/arrays/random_174932980295.bin": {
+        "HeapSort": 0.003771,
+        "InsertionSort": 0.003475,
+        "MergeSort": 0.005742,
+        "QuickSort": 0.003546,
+        "Sort C++": 0.002193,
+        "TimSort": 0.002015
+    },
+    "test/arrays/random_174932980296.bin": {
+        "HeapSort": 0.003332,
+        "InsertionSort": 0.003035,
+        "MergeSort": 0.005228,
+        "QuickSort": 0.003216,
+        "Sort C++": 0.001989,
+        "TimSort": 0.001804
+    },
+    "test/arrays/random_174932980297.bin": {
+        "HeapSort": 0.004263,
+        "InsertionSort": 0.003746,
+        "MergeSort": 0.006356,
+        "QuickSort": 0.004273,
+        "Sort C++": 0.002563,
+        "TimSort": 0.002041
+    },
+    "test/arrays/random_174932980298.bin": {
+        "HeapSort": 0.003496,
+        "InsertionSort": 0.002974,
+        "MergeSort": 0.00575,
+        "QuickSort": 0.003391,
+        "Sort C++": 0.002491,
+        "TimSort": 0.00196
+    },
+    "test/arrays/random_174932980299.bin": {
+        "HeapSort": 0.003225,
+        "InsertionSort": 0.003198,
+        "MergeSort": 0.005474,
+        "QuickSort": 0.0033,
+        "Sort C++": 0.002176,
+        "TimSort": 0.002136
+    }
+}

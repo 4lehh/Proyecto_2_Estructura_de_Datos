@@ -9,8 +9,9 @@ from pathlib import Path
 from collections import defaultdict
 import re
 
-directorio_todo = Path("../json/")
-directorio = Path("./test/json/")
+# directorio_todo = Path("../json/")
+# directorio = Path("../json_tim/")
+directorio_todo = Path("./test/json/")
 
 def analisisPorJson(ruta: str = None) -> None:
     if(ruta == None): return
@@ -56,24 +57,26 @@ def promediosGenerales(ruta: str = None) -> list:
     insertionsort = 0.0
     heapsort = 0.0
     stdsort = 0.0
+    timsort = 0.0
 
     with open(ruta, "r") as f:
         data = json.load(f)
-
+    
     for archivo, resultados in data.items():
         mergesort += resultados["MergeSort"]
         quicksort += resultados["QuickSort"]
         insertionsort += resultados["InsertionSort"]
         heapsort += resultados["HeapSort"]
         stdsort += resultados["Sort C++"]
-    
+        timsort += resultados["TimSort"]
+
     datos = []
-    datos.append(mergesort/1000)
-    datos.append(quicksort/1000)
-    datos.append(insertionsort/1000)
-    datos.append(heapsort/1000)
-    datos.append(stdsort/1000)
-    
+    datos.append(mergesort/100)
+    datos.append(quicksort/100)
+    datos.append(insertionsort/100)
+    datos.append(heapsort/100)
+    datos.append(stdsort/100)
+    datos.append(timsort/100)
     return datos
 
 def grafica(promedios: list, tamanos: list, orden: str) -> None:
@@ -101,7 +104,7 @@ def grafica(promedios: list, tamanos: list, orden: str) -> None:
     plt.xscale("log", base=2)
     plt.xlabel("Tamaño del arreglo")
     plt.ylabel("Tiempo promedio (ms)")
-    plt.title(f"Comparación de algoritmos de ordenamiento con elementos {orden}")
+    plt.title(f"Ordenamiento con elementos {orden}")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
@@ -122,7 +125,7 @@ def grafica1(promedios: list, numeros: list, orden: str) -> None:
     plt.xscale("log", base=2)  # Escala logarítmica base 2 para tamaños
     plt.xlabel("Tamaño del arreglo")
     plt.ylabel("Tiempo promedio (ms)")
-    plt.title(f"Comparación de algoritmos de ordenamiento con elementos {orden}")
+    plt.title(f"Ordenamiento con elementos {orden}")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
@@ -171,21 +174,15 @@ def promedioUnoSolo(ruta: str) -> list:
     return datos
 
 
-tamanos = [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
-promedio_tim_random = obtenerPromedioSolo("resultados_random_*.json", r"resultados_random_(\d+)\.json")
+tamanos_random = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
+tamanos_ascendente = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432]
+tamanos_descendente = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
 promedio_random = obtenerPromedio("resultados_random_*.json", r"resultados_random_(\d+)\.json")                         # Promedio de los json randoms
-promedio_tim_ascendente = obtenerPromedioSolo("resultados_ascending_*.json", r"resultados_ascending_(\d+)\.json")
 promedio_ascendente = obtenerPromedio("resultados_ascending*.json", r"resultados_ascending_(\d+)\.json")                 # Promedio de los json ascendentes
-promedio_tim_descendente = obtenerPromedioSolo("resultados_descending_*.json", r"resultados_descending_(\d+)\.json")
 promedio_descendente = obtenerPromedio("resultados_descending*.json", r"resultados_descending_(\d+)\.json")             # Promedio de los json descendentes
 
-for i in range(len(tamanos)):
-    promedio_random[i].append(promedio_tim_random[i][0])
-    promedio_ascendente[i].append(promedio_tim_ascendente[i][0])
-    promedio_descendente[i].append(promedio_tim_descendente[i][0])
-
-grafica(promedio_random, tamanos, "random")
-grafica(promedio_ascendente, tamanos, "ascendentes")
-grafica(promedio_descendente, tamanos, "descendentes")
+grafica(promedio_random, tamanos_random, "random")
+grafica(promedio_ascendente, tamanos_ascendente, "ascendentes")
+grafica(promedio_descendente, tamanos_descendente, "descendentes")
 
 
