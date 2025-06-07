@@ -9,6 +9,7 @@ from pathlib import Path
 from collections import defaultdict
 import re
 
+directorio_todo = Path("../json/")
 directorio = Path("./test/json/")
 
 def analisisPorJson(ruta: str = None) -> None:
@@ -50,7 +51,6 @@ def obtenerNumeroJson(archivo: Path, patron_num: re.Pattern) -> int:
 
 def promediosGenerales(ruta: str = None) -> list:
     if(ruta == None): return
-    
     mergesort = 0.0
     quicksort = 0.0
     insertionsort = 0.0
@@ -78,7 +78,7 @@ def promediosGenerales(ruta: str = None) -> list:
 
 def grafica(promedios: list, tamanos: list, orden: str) -> None:
     algoritmos = list(zip(*promedios))
-    nombres_algoritmos = ["MergeSort", "QuickSort", "InsertionSort", "HeapSort", "Sort C++"]
+    nombres_algoritmos = ["MergeSort", "QuickSort", "InsertionSort", "HeapSort", "Sort C++", "TimSort"]
 
     plt.figure(figsize=(10, 6))
 
@@ -110,7 +110,7 @@ def grafica(promedios: list, tamanos: list, orden: str) -> None:
 def grafica1(promedios: list, numeros: list, orden: str) -> None:
     algoritmos = list(zip(*promedios))
 
-    nombres_algoritmos = ["MergeSort", "QuickSort", "InsertionSort", "HeapSort", "Sort C++"]
+    nombres_algoritmos = ["MergeSort", "QuickSort", "InsertionSort", "HeapSort", "TimSort", "Sort C++"]
 
     # Crear la gráfica
     plt.figure(figsize=(10, 6))
@@ -129,9 +129,9 @@ def grafica1(promedios: list, numeros: list, orden: str) -> None:
     plt.show()
 
 def obtenerPromedio(nombre_archivo: str, numero_archivo: str) -> list:
-    global directorio
+    global directorio_todo
     promedio = []
-    archivos = list(directorio.glob(nombre_archivo))
+    archivos = list(directorio_todo.glob(nombre_archivo))
     patron_num = re.compile(numero_archivo)
 
     archivos_ordenados = sorted(archivos, key=lambda f: obtenerNumeroJson(f, patron_num))
@@ -141,12 +141,51 @@ def obtenerPromedio(nombre_archivo: str, numero_archivo: str) -> list:
     
     return promedio
 
+def obtenerPromedioSolo(nombre_archivo: str, numero_archivo: str) -> list:
+    global directorio
+    promedio = []
+    archivos = list(directorio.glob(nombre_archivo))
+    patron_num = re.compile(numero_archivo)
+
+    archivos_ordenados = sorted(archivos, key=lambda f: obtenerNumeroJson(f, patron_num))
+    
+    for archivo in archivos_ordenados:
+        promedio.append(promedioUnoSolo(archivo))
+    
+    return promedio
+
+
+def promedioUnoSolo(ruta: str) -> list:
+    if(ruta == None): return
+    
+    algoritmo = 0.0
+    
+    with open(ruta, "r") as f:
+        data = json.load(f)
+
+    for archivo, resultados in data.items():
+        algoritmo += resultados["TimSort"]
+    datos = []
+    datos.append(algoritmo/1000)
+    
+    return datos
+
+
 tamanos = [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
+promedio_tim_random = obtenerPromedioSolo("resultados_random_*.json", r"resultados_random_(\d+)\.json")
 promedio_random = obtenerPromedio("resultados_random_*.json", r"resultados_random_(\d+)\.json")                         # Promedio de los json randoms
+promedio_tim_ascendente = obtenerPromedioSolo("resultados_ascending_*.json", r"resultados_ascending_(\d+)\.json")
 promedio_ascendente = obtenerPromedio("resultados_ascending*.json", r"resultados_ascending_(\d+)\.json")                 # Promedio de los json ascendentes
+promedio_tim_descendente = obtenerPromedioSolo("resultados_descending_*.json", r"resultados_descending_(\d+)\.json")
 promedio_descendente = obtenerPromedio("resultados_descending*.json", r"resultados_descending_(\d+)\.json")             # Promedio de los json descendentes
+
+for i in range(len(tamanos)):
+    promedio_random[i].append(promedio_tim_random[i][0])
+    promedio_ascendente[i].append(promedio_tim_ascendente[i][0])
+    promedio_descendente[i].append(promedio_tim_descendente[i][0])
 
 grafica(promedio_random, tamanos, "random")
 grafica(promedio_ascendente, tamanos, "ascendentes")
 grafica(promedio_descendente, tamanos, "descendentes")
+
 

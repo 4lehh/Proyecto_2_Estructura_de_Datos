@@ -1,6 +1,6 @@
 #pragma once 
 
-/**
+ /**
  * @file mergeSort.hpp
  * @brief Implementación del algoritmo MergeSort.
  * 

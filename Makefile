@@ -15,7 +15,7 @@ CXXFLAGS = $(CXXFLAGS_RELEASE)
 OBJ_DIR = build
 TARGET = main.out
 
-SOURCES = src/main.cpp src/heapSort.cpp src/quickSort.cpp src/mergeSort.cpp src/insertionSort.cpp
+SOURCES = src/main.cpp src/heapSort.cpp src/quickSort.cpp src/mergeSort.cpp src/insertionSort.cpp src/timSort.cpp
 OBJECTS = $(patsubst src/%.cpp, $(OBJ_DIR)/%.o, $(SOURCES))
 
 .PHONY: all clean run debug memoria
