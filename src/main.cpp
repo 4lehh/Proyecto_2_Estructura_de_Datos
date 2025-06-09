@@ -16,11 +16,19 @@
 
 int numero_elementos_array = 0; // Ver el numero de elementos de un array
 
-// Adaptador para std::sort
+/**
+* @brief Función adaptador para el std::sort
+* @param vector El vector que queremos ordenar
+*/
 void adapterSort(std::vector<int>& vector){
     std::sort(vector.begin(), vector.end());
 }
 
+/**
+* @brief Función encargada de obtener el nombre nombre del orden en que está el arreglo
+* @param nombre_archivo Nombre del archivo
+* @return Retorna los nombres del orden 
+*/
 std::string obtenerNombreOrden(const std::string& nombre_archivo) {
     std::filesystem::path p(nombre_archivo);
     std::string nombre_archivo_nuevo = p.filename().string();
@@ -33,7 +41,11 @@ std::string obtenerNombreOrden(const std::string& nombre_archivo) {
     }
 }
 
-
+/**
+ * @brief Función encargada del almacenaje de los JSON
+ * @param resultados Variable nlohmann::json con los resultados obtenidos
+ * @param orden Orden en que se encuentran los arreglos antes de ser ordenados
+ */
 void guardarJson(nlohmann::json &resultados, std::string &orden){
     try {
         if (!std::filesystem::exists(NOMBRE_CARPETA_JSON)) {
@@ -66,6 +78,10 @@ void guardarJson(nlohmann::json &resultados, std::string &orden){
     }
 }
 
+/**
+ * @brief Función encargada de obtener todos los archivos .bin de una determinada carpeta
+ * @return Retorna los nombres de los archivos 
+ */
 std::vector<std::string> archivosEnCarpeta() {
     std::vector<std::string> nombres_archivos;
 
@@ -97,13 +113,19 @@ std::vector<std::string> archivosEnCarpeta() {
  * @brief Función para verificar si un vector está ordenado.
  * 
  * @param arr El vector a verificar.
- * @return true Si el vector está ordenado.
- * @return false Si el vector no está ordenado.
+ * @return True Si el vector está ordenado.
+ * @return False Si el vector no está ordenado.
  */
 bool isSorted(const vc &vector) {
     return std::is_sorted(vector.begin(), vector.end());
 }
 
+/**
+ * @brief Función encargada del testeo de los archivos .bin
+ * @param nombre_archivo Nombre del archivo .bin
+ * @param sortFunction Función con la que se ordenará el arreglo
+ * @param algoritmo Nombre del algoritmo de ordenamiento
+ */
 double testeo(
         const std::string &nombre_archivo, 
         const std::function<void(std::vector<int>&)> &sortFunction,
