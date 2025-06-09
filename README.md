@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cpp,bash&perline=5" />
+    <img src="https://skillicons.dev/icons?i=cpp,python,bash&perline=5" />
   </a>
 </p>
 
@@ -48,22 +48,22 @@ Todos los algoritmos implementados deben ordenar números enteros de 32 bits. So
 
 ### Salida Esperada
 
-Para este entregable decidimos que la salida va a ser un archivo `json` que se encuentra en `/test/json` donde se almacenan todos los testeas.
+Para este entregable, se acordó que la salida consistirá en archivos en formato `json`, los cuales se almacenarán en la ruta `/test/json`. En estos archivos se registrarán los tiempos de ejecución de las pruebas realizadas con cada algoritmo, aplicados a los diferentes conjuntos de datos generados específicamente para las pruebas.
 
 </details>
 
 ## ⚙ **Comandos de Compilacion con Make**
 ### Compilar todo 
 ```bash
-make all
+make
 ```
-Esta regla compila todos los archivos fuente y genera el ejecutable ``main.out`` en el directorio raíz.
+Compila (si es necesario) todos los archivos fuente y genera el ejecutable ``main.out`` en el directorio raíz.
 
 ### Ejecutar el programa
 ```bash
 make run
 ```
-Esta regla compila todos los archivos fuentes y genera el ejecutable ``main.out``, luego lo ejecuta.
+Compila (si es necesario) todos los archivos fuentes y genera el ejecutable ``main.out``, luego lo ejecuta.
 
 ### Ejecutar modo debug
 ```bash
@@ -75,7 +75,7 @@ Compila (si es necesario) el programa y abre el ejecutable ``main.out`` con ``gd
 ```bash
 make memoria
 ```
-Compila (si es necesario) y ejecuta el programa bajo ``valgrind`` para identificar posibles fugas de memoria. Muestra información detallada sobre las fugas y sus causas.
+Compila (si es necesario) y ejecuta el programa usando ``valgrind`` para identificar posibles fugas de memoria. Muestra información detallada sobre las fugas y sus causas.
 
 ### Limpiar archivos generados
 ```bash
@@ -91,7 +91,7 @@ Elimina los archivos generados durante la compilación, incluyendo:
 
 ### Compilar Todo
 ```bash
-g++ -I ./include -Wall -O2 ./src/main.cpp ./src/heapSort.cpp ./src/quickSort.cpp ./src/mergeSort.cpp ./src/insertionSort.cpp ./src/timSort.cpp -o main.out // revisar
+g++ -I ./include -Wall -O2 ./src/main.cpp ./src/heapSort.cpp ./src/quickSort.cpp ./src/mergeSort.cpp ./src/insertionSort.cpp ./src/timSort.cpp -o main.out
 ```
 Compila todos los archivos fuente y genera el ejecutable ``main.out`` en el directorio raíz.
 
