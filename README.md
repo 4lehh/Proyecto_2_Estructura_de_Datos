@@ -53,6 +53,9 @@ Para este entregable, se acordó que la salida consistirá en archivos en format
 </details>
 
 ## ⚙ **Comandos de Compilacion con Make**
+> [!NOTE]
+> Antes de ejecutar el código, es necesario entender que la lectura de los datasets deben seguir una estructura. Para ello se recomienda seguir la siguiente plantilla
+> ``resultados_<orden>_<num_elementos>.bin`` donde orden puede ser random, ascendente o descendente y num_elementos es un número que indica la cantidad de elementos que tiene el arreglo.
 ### Compilar todo 
 ```bash
 make
@@ -88,15 +91,75 @@ Elimina los archivos generados durante la compilación, incluyendo:
   - El ejecutable ``main.out``.
 
 ## Comandos de compilacion sin Make
+<details>
+  <summary>Haz clic para expandir/contraer</summary>
+  
+  ### Compilar Todo
+  ```bash
+  g++ -I ./include -Wall -O2 ./src/main.cpp ./src/heapSort.cpp ./src/quickSort.cpp ./src/mergeSort.cpp ./src/insertionSort.cpp ./src/timSort.cpp -o main.out
+  ```
+  Compila todos los archivos fuente y genera el ejecutable ``main.out`` en el directorio raíz.
 
-### Compilar Todo
+  ### Ejecutar el programa
+  ```bash
+  ./main.out
+  ```
+  Ejecuta el programa (``main.out``).
+
+</details>
+
+## Creación de los datasets
+<details>
+  <summary>Haz clic para expandir/contraer</summary>
+  
+### Compilación del creador de datasets
 ```bash
-g++ -I ./include -Wall -O2 ./src/main.cpp ./src/heapSort.cpp ./src/quickSort.cpp ./src/mergeSort.cpp ./src/insertionSort.cpp ./src/timSort.cpp -o main.out
+g++ -o arrayGenerator.out ./src/arrayGenerator.cpp -O2
 ```
-Compila todos los archivos fuente y genera el ejecutable ``main.out`` en el directorio raíz.
+Compila el archivo fuente y genera el ejecutable ``arrayGenerator.out``
 
 ### Ejecutar el programa
 ```bash
-./main.out
+./arrayGenerator.out <num_arreglos> <tamanio_arreglos> <dominio_numeros> <orden_arreglo>
 ```
-Ejecuta el programa (``main.out``).
+Donde: 
+- **<num_arreglos>** es la cantidad de arreglos que vamos a crear.
+- **<tamanio_arreglos>** indica el largo de los arreglos que vamos a crear.
+- **<dominio_numeros>** es el dominio de los numeros que puede manejar el arreglo que vamos a crear.
+- **<orden_arreglo>** es el orden de los arreglos, ya sea random (1), ascendente (2) o descendente (3).
+Ejecuta el programa (``arrayGenerator.out``).
+
+</details>
+
+## Comandos para ejecutar el analizador de los JSON obtenidos (Python)
+> [!NOTE]
+> **Para el correcto funcionamiento y evitar posibles conflictos, se recomienda la creación de un entorno virtual.**
+
+> [!WARNING]
+> **Para la ejecución del programa se requiere haber ejecutado el main con los datasets correspondientes.**
+
+<details>
+  <summary>Haz clic para expandir/contraer</summary>
+  
+### Instalar las dependencias
+```bash
+pip install -r ./analisis_graficos/requirements.txt
+```
+Descargará/Actualizará las dependencias necesarias para la visualización de los gráficos.
+
+### Ejecución del programa
+#### Linux
+```bash
+python ./analisis_graficos/analisis.py
+```
+o también 
+```bash
+python3 ./analisis_graficos/analisis.py
+```
+#### Windows
+```cmd
+python .\analisis_graficos\analisis.py
+```
+Ejecutará el programa y podrá visualizar los gráficos.
+
+</details>
