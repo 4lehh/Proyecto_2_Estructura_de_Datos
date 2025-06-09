@@ -5,8 +5,23 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import re
 
-
 directorio_todo = Path("../test/json/")
+
+def main():
+    """
+    Función main
+    """
+    tamanos_random = tamanos_descendente = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
+    tamanos_ascendente = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432]
+    promedio_random = Analisis.obtenerPromedio("resultados_random_*.json", r"resultados_random_(\d+)\.json")                         # Promedio de los json randoms
+    promedio_ascendente = Analisis.obtenerPromedio("resultados_ascending*.json", r"resultados_ascending_(\d+)\.json")                # Promedio de los json ascendentes
+    promedio_descendente = Analisis.obtenerPromedio("resultados_descending*.json", r"resultados_descending_(\d+)\.json")             # Promedio de los json descendentes
+    Analisis.graficaLineal(promedio_random, tamanos_random, "random")
+    Analisis.graficaLineal(promedio_ascendente, tamanos_ascendente, "ascendentes")
+    Analisis.graficaLineal(promedio_descendente, tamanos_descendente, "descendentes")
+    Analisis.graficaSpline(promedio_random, tamanos_random, "random")
+    Analisis.graficaSpline(promedio_ascendente, tamanos_ascendente, "ascendentes")
+    Analisis.graficaSpline(promedio_descendente, tamanos_descendente, "descendentes")
 
 class Analisis:
 
@@ -164,16 +179,5 @@ class Analisis:
             promedio.append(Analisis.promediosGenerales(archivo))
         return promedio
 
-
-
-tamanos_random = tamanos_descendente = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
-tamanos_ascendente = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432]
-promedio_random = Analisis.obtenerPromedio("resultados_random_*.json", r"resultados_random_(\d+)\.json")                         # Promedio de los json randoms
-promedio_ascendente = Analisis.obtenerPromedio("resultados_ascending*.json", r"resultados_ascending_(\d+)\.json")                # Promedio de los json ascendentes
-promedio_descendente = Analisis.obtenerPromedio("resultados_descending*.json", r"resultados_descending_(\d+)\.json")             # Promedio de los json descendentes
-
-Analisis.graficaSpline(promedio_random, tamanos_random, "random")
-Analisis.graficaSpline(promedio_ascendente, tamanos_ascendente, "ascendentes")
-Analisis.graficaSpline(promedio_descendente, tamanos_descendente, "descendentes")
-
-
+if __name__ == "__main__":
+    main()
